@@ -1,0 +1,67 @@
+.error, span.required {color:red;}
+.success {color:#008000;}
+.alertbox {
+    width: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    display: none;
+    background: transparent;
+    padding: 5px;
+}
+.alertbox.active{display:block;animation: fadeInRight 1s;}
+.pack-expire {background-color:#f64a4a; color:#fff!important;}
+.notis-indicator {background:#f90c0c;position: absolute;
+height: 5px;
+width: 5px;
+border-radius: 50%;
+top: -5px;
+right: 0px;}
+
+.mCSB_container li {
+    width: 100%;
+}
+.datatable-dashv1-list .notification-icon{float: left;
+width: 50px;
+height: 50px;
+background: #444;
+line-height: 50px;
+text-align: center;
+font-size: 16px;
+border-radius: 50%;
+margin: 5px 10px 5px 0px;
+color:#fff;}
+.payment-received {background-color:#d4ffc9;}
+
+
+/*        ADMIN PERMISSION SECTIONS      */ 
+fieldset {
+    border: 2px solid #3c8dbc;
+    margin: 0 0 10px 22px;
+    padding: 10px;
+    width: 96%;
+}
+.modulpadding {
+    padding: 0;
+}
+.modul, .checkmd {
+    padding: 0;
+}
+.paddbotm {
+    border-bottom: 1px solid #3c8dbc;
+    min-height: 28px;
+}
+
+
+#myImageViewDetailsModal .header-color-modal {padding:0px !important;}
+#myImageViewDetailsModal.modal-edu-general .modal-body {padding: 15px !important;}
+.view-image-details {cursor:pointer;}
+.alertbox .close {
+    margin: 0;
+    margin-top: -13px;
+    margin-right: -15px;
+}
+.admin-check-pro-clr{
+	padding-top: 14px;
+}

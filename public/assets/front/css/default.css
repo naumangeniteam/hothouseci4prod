@@ -1,0 +1,458 @@
+/**** Default CSS *****/
+body,
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+    transition: all 0.5s;
+    color: #000000;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a,
+aside {
+    font-family: "Roboto", sans-serif;
+    transition: all 0.5s;
+}
+
+.row {
+    margin: 0px;
+}
+
+.container {
+    max-width: 1280px;
+}
+
+.show-mobile,
+.mobile-ads {
+    display: none;
+}
+
+.show-desktop {
+    display: block;
+    width: 100%;
+}
+
+/**** Header CSS *****/
+header {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+}
+
+body.hothouse header,
+body.home header {
+    display: none
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav a.navbar-brand img {
+    max-width: 120px;
+    width: 120px;
+}
+
+.site-nav .navbar ul li a {
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 8px 15px 7px 15px !important;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.site-nav .navbar ul li a:hover {
+    color: #FE0000;
+}
+
+.nav-item.dropdown {
+    line-height: 38px;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu,
+.navbar .dropdown-menu {
+    margin: 2px 0px 0px 10px;
+    padding: 0px;
+}
+
+.site-nav .navbar ul .nav-item.dropdown .dropdown-menu a {
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    padding: 8px 15px !important;
+    line-height: 28px !important;
+}
+
+.site-nav .navbar ul .nav-item.dropdown .dropdown-menu a:hover {
+    background: #ededed;
+    border-bottom: 1px solid #dddddd;
+}
+
+.site-nav .navbar ul .nav-item.dropdown .dropdown-menu a:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.site-nav .navbar ul .nav-item.dropdown .dropdown-menu a:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: none;
+}
+
+.nav-submit-event {
+    background: #FE0000 !important;
+    color: #ffffff !important;
+    border-radius: 100px;
+}
+
+.nav-submit-event:hover {
+    background: #000000 !important;
+}
+
+.nav-user-login {
+    margin-left: 20px;
+}
+
+.nav-user-login a {
+    display: flex !important;
+    align-items: self-start;
+    gap: 3px;
+}
+
+.nav-user-login img {
+    width: 22px;
+}
+
+/***** Footer CSS *****/
+footer {
+    background: #000000;
+    padding-top: 50px;
+}
+
+.advertise-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    color: #FE0000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+footer img {
+    width: 44px;
+}
+
+.footer-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.footer-menu ul li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.footer-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-menu ul li a:hover {
+    color: #cccccc;
+}
+
+.page-ending {
+    background: #000000;
+    padding-bottom: 35px;
+}
+
+.page-ending p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+/***** Scroll Bar *****/
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+}
+
+#scrollToTopBtn img {
+    width: 20px;
+}
+
+/***** Subscriptions *****/
+.jazz-subscription {
+    background: #E0E0E0;
+    padding: 70px 0px;
+}
+
+.jazz-subscription h2 {
+    text-align: center;
+}
+
+.jazz-subscription .subscribe {
+    max-width: 60%;
+    margin: 0px auto;
+}
+
+.jazz-subscription .col-md-5,
+.jazz-subscription .col-md-2 {
+    padding: 0px 5px;
+}
+
+.jazz-subscription .alert.alert-error {
+    padding: 0px;
+    text-align: center;
+    color: #FE0000;
+    font-weight: 500;
+    display: block;
+}
+
+/***** Form Fields *****/
+input.form-control,
+textarea.form-control,
+.modal-dialog .modal-content textarea {
+    padding: 10px 12px;
+    border-radius: 7px;
+    box-shadow: none !important;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #dddddd;
+}
+
+.modal-dialog .modal-content select {
+    padding: 10px 12px;
+    border-radius: 7px;
+    box-shadow: none !important;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #dddddd;
+    height: 45px !important;
+}
+
+input.form-control:focus,
+textarea.form-control:focus,
+.modal-dialog .modal-content textarea:focus,
+.modal-dialog .modal-content select:focus {
+    outline: none;
+    border: 1px solid #000000;
+}
+
+input.form-control::-webkit-input-placeholder,
+textarea.form-control::-webkit-input-placeholder,
+.modal-dialog .modal-content textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #999999;
+}
+
+input.form-control::-moz-placeholder,
+textarea.form-control::-moz-placeholder,
+.modal-dialog .modal-content textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #999999;
+}
+
+input.form-control:-ms-input-placeholder,
+textarea.form-control:-ms-input-placeholder,
+.modal-dialog .modal-content textarea:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #999999;
+}
+
+input.form-control:-moz-placeholder,
+textarea.form-control:-moz-placeholder,
+.modal-dialog .modal-content textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #999999;
+}
+
+.btn-black-bg {
+    background: #000000;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto';
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-white-bg {
+    background: #ffffff;
+    border: none;
+    color: #000000;
+    font-family: 'Roboto';
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.btn-black-bordered {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    font-family: 'Roboto';
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.btn-gray-bordered {
+    background: transparent;
+    border: 2px solid #dddddd;
+    color: #000000;
+    font-family: 'Roboto';
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.modal-dialog .modal-content {
+    border-radius: 7px;
+    border: none;
+}
+
+.modal-dialog .modal-content .modal-body {
+    padding: 20px 15px 10px 15px;
+}
+
+.modal-dialog .modal-content .modal-footer {
+    border: none;
+    padding: 10px 30px 25px 30px;
+    justify-content: left;
+}
+
+.modal-dialog .modal-content .modal-body h2 {
+    font-size: 24px;
+    margin: 0px 0px 10px 15px;
+}
+
+.modal-dialog .modal-content .modal-footer .btn {
+    padding: 8px 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+}
+
+.modal-dialog .modal-content .modal-footer .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.modal-dialog .modal-content .modal-footer .btn-secondary {
+    background-color: #FE0000;
+}
+
+.modal-dialog .modal-content .modal-footer .btn-danger {
+    background-color: #000000;
+}
+
+.alert.alert-error {
+    color: red;
+    padding: 0px 15px;
+    font-weight: 500;
+}
+
+.alert.alert-success {
+    color: green;
+    padding: 0px 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 1425px) {
+    .site-nav .navbar ul li a {
+        padding: 8px 9px 7px 9px !important;
+        font-size: 15px;
+    }
+}
+@media (max-width: 1250px) {
+    .site-nav .navbar ul li a {
+        padding: 8px 6px 7px 6px !important;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    .site-nav .navbar ul li a {
+        padding: 5px 5px 5px 5px !important;
+        font-size: 13px !important;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    .site-nav .navbar ul li a {
+        padding: 5px 5px 5px 5px !important;
+        font-size: 12px !important;
+    }
+}

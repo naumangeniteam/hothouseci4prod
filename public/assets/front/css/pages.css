@@ -1,0 +1,1336 @@
+/***** Single Event *****/
+.hhj-single-event {
+    padding: 60px 0px;
+    }
+    
+    .hhj-single-event h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 40px;
+    }
+    
+    #countdown {
+    margin-bottom: 40px;
+    }
+    
+    #countdown ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #000000;
+    width: fit-content;
+    margin: 0px auto;
+    border-radius: 7px;
+    padding: 5px;
+    }
+    
+    #countdown ul li {
+    list-style: none;
+    background: #555555;
+    padding: 15px 42px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    }
+    
+    .event-descriptions h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    }
+    
+    .events-details ul {
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    .events-details ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .events-details ul li img {
+    width: 35px;
+    }
+    
+    .events-details ul li a {
+    color: #000000;
+    }
+    
+    .events-details ul li a:hover {
+    color: #FE0000;
+    }
+    
+    .empty-des {
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 300;
+    }
+    
+    .buy-links {
+    margin-bottom: 30px;
+    }
+    
+    .buy-links ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    gap: 10px;
+    }
+    
+    .buy-links ul li a {
+    padding: 10px 15px;
+    border-radius: 7px;
+    color: #ffffff;
+    text-decoration: none;
+    }
+    
+    .buy-links ul li a:hover {
+    color: #ffffff;
+    }
+    
+    .buy-links ul li.buy a {
+    background: #FE0000;
+    }
+    
+    .buy-links ul li.reserve a {
+    background: #000000;
+    }
+    
+    .get-direction {
+    margin: 35px 0px;
+    }
+    
+    .get-direction form {
+    display: flex;
+    gap: 20px;
+    }
+    
+    .get-direction form .evoInput {
+    width: 50%;
+    border: 1px solid #999999;
+    border-radius: 7px;
+    padding: 10px;
+    }
+    
+    .get-direction form .evoInput:focus {
+    border: 1px solid #000000;
+    outline: none;
+    box-shadow: none;
+    }
+    
+    .get-direction form .submit {
+    width: auto;
+    border-radius: 7px;
+    background: #555555;
+    color: #ffffff;
+    padding: 0px 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 2px solid #555555;
+    cursor: pointer;
+    }
+    
+    .social-media {
+    display: flex;
+    gap: 10px;
+    }
+    
+    .social-media img  {
+    width: 50px;
+    }
+    
+    /***** Event Venues *****/
+    
+    .page-banner {
+    height: 350px;
+    overflow: hidden;
+    background-size: cover !important;
+    background-position: top center !important;
+    }
+    
+    .page-banner .page-banner-caption {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    }
+    
+    .page-banner .page-banner-caption h1 {
+    color: #FE0000;
+    text-transform: uppercase;
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .hhj-venue-row {
+    padding-bottom: 60px;
+    }
+    
+    .venue-search {
+    margin: 60px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    }
+    
+    .venue-search input[type="text"] {
+    border: 1px solid #DFE1E5;
+    border-radius: 100px 0px 0px 100px;
+    padding: 12px 50px !important;
+    }
+    
+    .venue-search input[type="submit"] {
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 0px 100px 100px 0px;
+    padding: 12px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: roboto;
+    font-weight: 500;
+    }
+    
+    .venue-search img {
+    position: absolute;
+    margin-left: 20px;
+    }
+    
+    .hhj-venue-col {
+    padding: 10px;
+    }
+    
+    .hhj-venue-box {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    }
+    
+    .explore-img img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    }
+    
+    .explore-img button {
+    padding: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    }
+    
+    .venue-title button {
+    width: 100%;
+    border: none !important;
+    background: transparent;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-shadow: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    }
+    
+    .explore-img button:focus,
+    .venue-title button:focus,
+    .venue-btn button:focus,
+    .location-details a:focus,
+    .getDirections a:focus {
+    outline: none;
+    box-shadow: none;
+    }
+    
+    .venue-btn button {
+    border: none !important;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 0px 0px 7px 7px;
+    padding: 8px 0px;
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+    }
+    
+    .hhj-venue-map {
+    padding: 0px;
+    height: 500px;
+    }
+    
+    #map_canvas {
+    width: 100%;
+    height: 500px;
+    }
+    
+    .hhj-venue-list {
+    background: #F7F7F7;
+    padding: 35px 0px 60px 0px;
+    }
+    
+    .venue-name {
+    text-align: center;
+    margin: 35px auto;
+    }
+    
+    .list-block {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    }
+    
+    .list-block li {
+    list-style: none;
+    flex: 1 1 calc(50% - 20px);
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    cursor: pointer;
+    }
+    
+    .list-block li:hover {
+    box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.1);
+    }
+    
+    .list-block li span.toggleButton {
+    width: 100%;
+    display: block;
+    line-height: 40px;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    }
+    
+    .list-block li span.toggleButton img {
+    width: 26px;
+    float: right;
+    margin-top: 8px;
+    }
+    
+    .map-pin {
+    background: #333333;
+    width: 40px;
+    border-radius: 100px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    }
+    
+    .map-pin img {
+    width: 25px;
+    margin: 6px auto;
+    display: block;
+    }
+    
+    .location-details {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 15px 15px 0px 15px;
+    }
+    
+    .location-details p {
+    margin: 0px;
+    font-size: 15px;
+    }
+    
+    .location-details a {
+    padding: 0px;
+    color: #FE0000;
+    font-size: 15px;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 500;
+    }
+    
+    .getDirections {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 15px 15px 0px 15px;
+    }
+    
+    .getDirections input {
+    width: 300px;
+    border-radius: 7px;
+    box-shadow: none;
+    border: 1px solid #999999;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    }
+    
+    .getDirections input:focus {
+    border: 1px solid #000000;
+    outline: none;
+    box-shadow: none;
+    }
+    
+    .getDirections a {
+    background: #000000;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-weight: 500;
+    }
+    
+    /***** Calendar *****/
+    .calendar-section {
+    background-color: #F7F7F7;
+    }
+    
+    .hhj-calender-row {
+    background: #ffffff;
+    padding: 75px 0px 100px 0px;
+    }
+    
+    .hhj-calendar-date h1 {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    }
+    
+    .hhj-calendar-date #day-carousel {
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: unset !important;
+    }
+    
+    .hhj-calendar-date #day-carousel .item {
+    padding: 5px 10px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgb(217 217 217);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(217, 217, 217, 1);
+    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 4px;
+    }
+    
+    .hhj-calendar-date #day-carousel .item .day-box p {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    }
+    
+    .hhj-calendar-date #day-carousel .item .day-box h3 {
+    margin: 0px 0px 0px 0px;
+    font-size: 22px;
+    }
+    
+    .hhj-calendar-date #day-carousel .item.past-date {
+    background: #ededed;
+    }
+    
+    .hhj-calendar-date #day-carousel .item.past-date .day-box p,
+    .hhj-calendar-date #day-carousel .item.past-date .day-box h3 {
+    color: #cccccc;
+    }
+    
+    .hhj-calendar-date #day-carousel .item.selectdate {
+    background: #FE0000;
+    }
+    
+    .hhj-calendar-date #day-carousel .item.selectdate p,
+    .hhj-calendar-date #day-carousel .item.selectdate h3 {
+    color: #ffffff;
+    }
+    
+    .hhj-calendar-date #heading-carousel {
+    width: 360px;
+    margin: 0px auto;
+    }
+    
+    .hhj-calendar-date .owl-stage {
+    width: 500px !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    }
+    
+    .hhj-calendar-date .owl-item.cloned {
+    min-height: 100px;
+    }
+    
+    .hhj-calendar-date .owl-stage-outer.owl-height {
+    height: 75px !important;
+    }
+    
+    .hhj-calendar-date .owl-nav .owl-prev {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: transparent !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #ededed !important;
+    transition: all 0.5s;
+    }
+    
+    .hhj-calendar-date .owl-nav .owl-prev span {
+    color: #000000;
+    font-size: 28px !important;
+    line-height: 26px;
+    }
+    
+    
+    .hhj-calendar-date .owl-nav .owl-next {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: transparent !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #ededed !important;
+    transition: all 0.5s;
+    }
+    
+    .hhj-calendar-date .owl-nav .owl-next span {
+    color: #000000;
+    font-size: 28px !important;
+    line-height: 26px;
+    }
+    
+    .hhj-calendar-date .owl-nav .owl-prev:focus,
+    .hhj-calendar-date .owl-nav .owl-next:focus {
+    outline: none;
+    border: 2px solid #000000 !important;
+    }
+    
+    
+    .hhj-calendar-date .owl-nav .owl-prev:focus span,
+    .hhj-calendar-date .owl-nav .owl-next:focus span {
+    color: #000000 !important;
+    }
+    
+    .onclick_Inpputs {
+    margin-top: -25px;
+    }
+    
+    .hhj-calender {
+    padding: 10px 0px 70px 0px;
+    justify-content: center;
+    }
+    
+    .hhj-festival {
+    padding: 10px 0px 50px 0px;
+    }
+    
+    .not-found {
+    text-align: center;
+    font-size: 22px;
+    color: #999999;
+    }
+    
+    .hhj-festival .home-box {
+    height: 400px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    background-size: cover !important;
+    background-position: top center !important;
+    }
+    
+    .hhj-festival .home-box .calendar-box {
+    width: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding: 15px 0px;
+    }
+    
+    .hhj-festival .home-box .calendar-box h6 {
+    color: #ffffff;
+    font-size: 22px;
+    }
+    
+    .hhj-festival .home-box .calendar-box p {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0px;
+    font-weight: 500;
+    }
+    
+    .hhj-festival .home-box .calendar-box a.online-btn {
+    color: #FE0000;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 12px;
+    display: block;
+    }
+    
+    .hhj-single-festival,
+    .hhj-submit-event,
+    .contact-info,
+    .hhj-about,
+    .hhj-how-to {
+    background: #f7f7f7;
+    padding: 60px 0px;
+    }
+    
+    .hhj-festival-details {
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.2);
+    background: #ffffff;
+    }
+    
+    .hhj-festival-details .col-md-6 {
+    padding: 0px;
+    }
+    
+    .festival-img img {
+    width: 100%;
+    border-radius: 7px;
+    }
+    
+    .festival-info {
+    padding: 30px;
+    }
+    
+    .festival-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    }
+    
+    .festival-list p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px;
+    font-weight: 500;
+    }
+    
+    .festival-list p img {
+    width: 24px;
+    }
+    
+    .festival-website a img {
+    width: 26px;
+    }
+    
+    .festival-website a {
+    text-transform: uppercase;
+    color: #FE0000;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    }
+    
+    .festival-descriptions {
+    margin-top: 25px;
+    }
+    
+    .festival-descriptions h4 {
+    font-size: 22px;
+    }
+    
+    .festival-lineup {
+    margin-top: 40px;
+    }
+    
+    .festival-lineup h3 {
+    font-size: 26px;
+    }
+    
+    .submit-event h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    }
+    
+    .submit-eventbox {
+    background: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.05);
+    padding: 40px 20px 20px 20px;
+    }
+    
+    .submit-eventbox input,
+    .submit-eventbox textarea {
+    font-size: 15px;
+    color: #000000;
+    }
+    
+    .submit-eventbox input::-webkit-input-placeholder,
+    .submit-eventbox textarea::-webkit-input-placeholder {
+    color: #000000;
+    }
+    
+    .submit-eventbox input::-moz-placeholder,
+    .submit-eventbox textarea::-moz-placeholder {
+    color: #000000;
+    }
+    
+    .submit-eventbox input:-ms-input-placeholder,
+    .submit-eventbox textarea:-ms-input-placeholder {
+    color: #000000;
+    }
+    
+    .submit-eventbox input:-moz-placeholder,
+    .submit-eventbox textarea:-moz-placeholder {
+    color: #000000;
+    }
+    
+    .submit-eventbox select {
+    border-radius: 7px;
+    height: 45px !important;
+    font-size: 15px;
+    color: #000000;
+    }
+    
+    .submit-eventbox select:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #000000;
+    }
+    
+    .submit-eventbox label {
+    width: 100%;
+    }
+    
+    .event-date select {
+    padding: 10px 20px;
+    }
+    
+    .repeated-event {
+    display: flex;
+    gap: 15px;
+    }
+    
+    .repeated-event .form-group {
+    margin-bottom: 5px;
+    }
+    
+    .repeated-event .form-group .radiobox,
+    .virtual-event {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    }
+    
+    .single-label {
+    padding: 15px 0px 0px 15px;
+    }
+    
+    .add-new-vanue a {
+    background: #000000;
+    color: #ffffff;
+    padding: 6px 15px;
+    display: block;
+    overflow: hidden;
+    width: fit-content;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    }
+    
+    .add-new-vanue a:hover {
+    background: #FE0000;
+    }
+    
+    .add-new-vanue p {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    margin-top: 5px;
+    }
+    
+    .artist-row {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    }
+    
+    .add-artist span {
+    background: #FE0000;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+    overflow: hidden;
+    width: fit-content;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    }
+    
+    .add-artist span:hover {
+    background: #000000;
+    }
+    
+    .boost-cont {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    }
+    
+    .submit-events a {
+    color: #FE0000;
+    }
+    
+    .submit-events input {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 30px;
+    width: fit-content;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    }
+    
+    .gcaptcha {
+    margin-top: 40px;
+    }
+    
+    .privacy_policy {
+    padding: 60px 0px;
+    }
+    
+    .privacy_policy h1 {
+    font-size: 40px;
+    text-align: left !important;
+    margin-bottom: 20px;
+    }
+    
+    .contact-info .container {
+    background: #ffffff;
+    border-radius: 7px;
+    border: 1px solid #ededed;
+    margin-bottom: 20px;
+    padding: 30px;
+    }
+    
+    .contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    }
+    
+    .contact-info p {
+    font-size: 17px;
+    margin: 0px 0px 10px 0px;
+    }
+    
+    .contact-info p span {
+    font-weight: 500;
+    }
+    
+    .contact-info h4 {
+    font-size: 20px;
+    }
+    
+    .contact-info ul,
+    .hhj-about ul {
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    .contact-info ul li,
+    .hhj-about ul li {
+    margin: 0px 0px 10px 18px;
+    font-size: 17px;
+    }
+    
+    .about-info .row {
+    background: #ffffff;
+    border-radius: 7px;
+    border: 1px solid #ededed;
+    padding: 30px;
+    margin-bottom: 20px;
+    }
+    
+    .about-info .row {
+    align-items: center;
+    }
+    
+    .about-member {
+    background: #ffffff;
+    border-radius: 7px;
+    border: 1px solid #ededed;
+    padding: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .hhj-about h2,
+    .hhj-how-to h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    }
+    
+    .about-member h4 {
+    font-size: 20px;
+    }
+    
+    .member-heading {
+    text-align: center;
+    }
+    
+    .hhj-how-to .row {
+    background: #ffffff;
+    border-radius: 7px;
+    border: 1px solid #ededed;
+    padding: 30px;
+    margin-bottom: 20px;
+    }
+    
+    .hhj-how-to p {
+    text-align: left !important;
+    }
+    
+    .hhj-how-to a {
+    font-size: 16px;
+    width: fit-content;
+    display: block;
+    float: left;
+    overflow: hidden;
+    background: #000000;
+    margin-right: 10px;
+    border-radius: 7px;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    }
+    
+    .hhj-how-to span {
+    font-size: 16px !important;
+    font-weight: 500;
+    }
+    
+    .hhj-how-to .row .row {
+    display: none;
+    }
+    
+    .hhj-how-to p a span,
+    .hhj-how-to p a {
+    background: #FE0000;
+    }
+    
+    .hhj-how-to p.default-heading {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 90px;
+    border: none !important;
+    background: transparent !important;
+    padding: 0px !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    }
+    
+    .hhj-how-to p.default-heading strong,
+    .hhj-how-to p.default-heading span {
+    font-weight: bold !important;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 18px !important;
+    }
+    
+    .maz-events {
+    padding: 25px 0px;
+    }
+    
+    .hhj-featured-artist {
+    padding: 60px 0px;
+    }
+    
+    .hhj-featured-artist h2 {
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    }
+    
+    .blog-post {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    }
+    
+    .blog-post a {
+    display: block;
+    float: right;
+    margin-top: -20px;
+    color: #FE0000;
+    }
+    
+    .blog-post p:empty {
+    display: none;
+    }
+    
+    .artist-sec {
+    height: 290px;
+    overflow: hidden;
+    }
+    
+    .artist-sec p img {
+    width: 130px;
+    height: 170px;
+    object-fit: cover;
+    float: left;
+    border-radius: 10px;
+    margin-right: 15px;
+    }
+    
+    .single-contents {
+    padding: 80px 0px;
+    }
+    
+    .single-contents h1 {
+    font-size: 36px;
+    }
+    
+    .single-contents img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    float: left;
+    margin-right: 30px;
+    border-radius: 7px;
+    }
+    
+    .sp-box {
+    border-radius: 10px 10px 0px 0px;
+    background-size: cover;
+    height: 370px;
+    padding: 0px;
+    }
+    
+    .sp-box:before {
+    content: "";
+    width: 393px;
+    height: 370px;
+    background: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    }
+    
+    .sp-box-info {
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+    padding: 0px 35px 0px 15px;
+    }
+    
+    .sp-box-info h3,
+    .sp-box-info p,
+    .sp-box-info a,
+    .sp-box-info h6 {
+    color: #ffffff !important;
+    }
+    
+    .sponsor-row .hhj-buttons {
+    background: #FE0000;
+    }
+      
+    @media screen and (max-width: 1600px) {
+        .sp-box:before {
+         width: 330px!important;
+        }
+    }
+    @media screen and (max-width: 1575px) {
+        .sp-box:before {
+         width: 325px!important;
+        }
+    }
+    @media screen and (max-width: 1550px) {
+        .sp-box:before {
+         width: 320px!important;
+        }
+    }
+    @media screen and (max-width: 1525x) {
+        .sp-box:before {
+         width: 315px!important;
+        }
+    }
+    @media screen and (max-width: 1500px) {
+        .sp-box:before {
+         width: 310px!important;
+        }
+    }
+    @media screen and (max-width: 1475px) {
+        .sp-box:before {
+         width: 305px!important;
+        }
+    }
+    @media screen and (max-width: 1450px) {
+        .sp-box:before {
+         width: 300px!important;
+        }
+    }
+    @media screen and (max-width: 1425px) {
+        .sp-box:before {
+         width: 295px!important;
+        }
+    }
+    @media screen and (max-width: 1400px) {
+        .sp-box:before {
+         width: 290px!important;
+        }
+    }
+    @media screen and (max-width: 1375px) {
+        .sp-box:before {
+         width: 285px!important;
+        }
+    }
+    @media screen and (max-width: 1350px) {
+        .sp-box:before {
+         width: 280px!important;
+        }
+    }
+    @media screen and (max-width: 1325px) {
+        .sp-box:before {
+         width: 275px!important;
+        }
+    }
+    @media screen and (max-width: 1300px) {
+        .sp-box:before {
+         width: 270px!important;
+        }
+    }
+    @media screen and (max-width: 1275px) {
+        .sp-box:before {
+         width: 265px!important;
+        }
+    }
+    @media screen and (max-width: 1250px) {
+        .sp-box:before {
+         width: 255px!important;
+        }
+    }
+    @media screen and (max-width: 1225px) {
+        .sp-box:before {
+         width: 250px!important;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .sp-box:before {
+         width: 245px!important;
+        }
+    }
+    @media screen and (max-width: 1175px) {
+        .sp-box:before {
+         width: 240px!important;
+        }
+    }
+    @media screen and (max-width: 1150px) {
+        .sp-box:before {
+         width: 235px!important;
+        }
+    }
+    @media screen and (max-width: 1125px) {
+        .sp-box:before {
+         width: 230px!important;
+        }
+    }
+    @media screen and (max-width: 1100px) {
+        .sp-box:before {
+         width: 220px!important;
+        }
+    }
+    @media screen and (max-width: 1075px) {
+        .sp-box:before {
+         width: 215px!important;
+        }
+    }
+    @media screen and (max-width: 1050px) {
+        .sp-box:before {
+         width: 210px!important;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .sp-box:before {
+         width: 315px!important;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .sp-box:before {
+            width: 305px !important;
+        }
+    }
+    
+    @media screen and (max-width: 975px) {
+        .sp-box:before {
+            width: 295px !important;
+        }
+    }
+    
+    @media screen and (max-width: 950px) {
+        .sp-box:before {
+            width: 285px !important;
+        }
+    }
+    
+    @media screen and (max-width: 925px) {
+        .sp-box:before {
+            width: 275px !important;
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        .sp-box:before {
+            width: 270px !important;
+        }
+    }
+    
+    @media screen and (max-width: 875px) {
+        .sp-box:before {
+            width: 265px !important;
+        }
+    }
+    
+    @media screen and (max-width: 850px) {
+        .sp-box:before {
+            width: 255px !important;
+        }
+    }
+    
+    @media screen and (max-width: 825px) {
+        .sp-box:before {
+            width: 245px !important;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .sp-box:before {
+            width: 235px !important;
+        }
+    }
+    
+    @media screen and (max-width: 775px) {
+        .sp-box:before {
+            width: 230px !important;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .sp-box:before {
+            width: 730px !important;
+        }
+    }
+    
+    @media screen and (max-width: 742px) {
+        .sp-box:before {
+            width: 705px !important;
+        }
+    }
+    
+    @media screen and (max-width: 717px) {
+        .sp-box:before {
+            width: 680px !important;
+        }
+    }
+    
+    @media screen and (max-width: 692px) {
+        .sp-box:before {
+            width: 655px !important;
+        }
+    }
+    
+    @media screen and (max-width: 667px) {
+        .sp-box:before {
+            width: 630px !important;
+        }
+    }
+    
+    @media screen and (max-width: 642px) {
+        .sp-box:before {
+            width: 605px !important;
+        }
+    }
+    
+    @media screen and (max-width: 617px) {
+        .sp-box:before {
+            width: 580px !important;
+        }
+    }
+    
+    @media screen and (max-width: 592px) {
+        .sp-box:before {
+            width: 555px !important;
+        }
+    }
+    
+    @media screen and (max-width: 567px) {
+        .sp-box:before {
+            width: 530px !important;
+        }
+    }
+    
+    @media screen and (max-width: 542px) {
+        .sp-box:before {
+            width: 505px !important;
+        }
+    }
+    
+    @media screen and (max-width: 517px) {
+        .sp-box:before {
+            width: 480px !important;
+        }
+    }
+    
+    @media screen and (max-width: 492px) {
+        .sp-box:before {
+            width: 455px !important;
+        }
+    }
+    
+    @media screen and (max-width: 467px) {
+        .sp-box:before {
+            width: 430px !important;
+        }
+    }
+    
+    @media screen and (max-width: 442px) {
+        .sp-box:before {
+            width: 405px !important;
+        }
+    }
+    
+    @media screen and (max-width: 417px) {
+        .sp-box:before {
+            width: 380px !important;
+        }
+    }
+    
+    @media screen and (max-width: 392px) {
+        .sp-box:before {
+            width: 355px !important;
+        }
+    }
+    
+    @media screen and (max-width: 367px) {
+        .sp-box:before {
+            width: 330px !important;
+        }
+    }
+    
+    @media screen and (max-width: 342px) {
+        .sp-box:before {
+            width: 300px !important;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .sp-box:before {
+            width: 280px !important;
+        }
+    }
+    

@@ -1,0 +1,253 @@
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+	.navbar-brand img {
+		width: 127px;
+	}
+	.slider-text .animated-button {
+		width: 45%;
+	}
+	.slider-text{
+		top: 13%;
+	}
+	.slider-text .slider-caption {
+		margin-left: 23%;
+	}
+	.slider-text .slider-caption h1 span{
+		font-size: 55px;
+	}
+	.listen-issue .listen-img img{
+		bottom:0;
+	}
+	.listen-issue .vertical{
+		font-size:31px;
+	}
+	.listen-issue .img1{
+		width: 228px;
+		margin-top: 66px;
+	}
+	.calendar-box h5 span{
+		right: -32px;
+		width: 58px;
+		top: 15px;
+	}
+	.head-nav-third ul li {
+		margin: 0 3px;
+	}
+	.single-banner-caption.about-caption{
+		left:47%;
+	}
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.head-nav-third ul li{
+		margin: 0 2px;
+	}
+	.slider-text{
+		top: 20%;
+	}
+	.slider-text .slider-caption h1{
+		font-weight: 500;
+		line-height: 50px;
+		font-size: 24px;
+	}
+	.slider-text .slider-caption h1 span{
+		font-size: 45px;
+		line-height:45px;
+	}
+	.slider-text .slider-caption {
+		margin-left: 30%;
+	}
+	.listen-issue .img1{
+		width: 162px;
+	}
+	.listen-issue .pin-event{
+		min-height: 265px;
+		padding-left: 15%;
+	}
+	.listen-issue .vertical{
+		font-size: 23px;
+	}
+	.listen-issue .wrapv:after{
+		top:15px;
+	}
+	form.subscribe input[type="submit"]{
+		width: 36%;
+		padding: 8px 12px;
+	}
+	form.subscribe input[type=text]{
+		width:72%;
+	}
+	footer ul li{
+		margin: 0 18px 10px;
+	}
+	.single-banner-caption.about-caption{
+		width: 500px;
+		left: 19%;
+		top: 25%;
+	}
+	.single-banner-img img{
+		min-height:300px;
+		object-fit:cover;
+	}
+	.previous-issue-month ul li{
+		margin-right: 13px;
+	}
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+	.mobile-show{
+		display:block;
+	}
+	.navbar-brand img {
+		width: 129px;
+		margin-top: 1px;
+	}
+	.navbar-toggler i{
+		font-size:23px;
+		color:#b0000c;
+	}
+	.head-nav-third ul li.active:after{
+		display:none;
+	}
+	.slider-text p, .slider-text p span {
+		font-size: 11px;
+		margin-bottom: 2px;
+		    width: 89%;
+	}
+	#main-carousel .owl-dots{
+		top:82%;
+	}
+	.slider-text {
+		position: relative;
+		top: auto;
+		padding:40px 0 0;
+	}
+	.slider-text .slider-caption {
+		margin-left: 0;
+	}
+	.slider-text .slider-caption h1{
+		color: #000;
+		font-weight: 500;
+		line-height: 34px;
+		font-size: 27px;
+	}
+	.slider-text .slider-caption h1 span{
+		font-size:36px;
+		padding:15px 0;
+	}
+	.slider-text .slider-caption p{
+		width:100%;
+	}
+	.history-search ul li{
+		display:block;
+		margin-bottom:20px;
+		margin-right:0;
+	}
+	.history-search ul li button[type="submit"]{
+		right:-4px;
+	}
+	.home-history .default-heading{
+		margin-top:25px;
+	}
+	.home-history #partner-carousel{
+		margin-left:0;
+	}
+	.listen-issue .listen-img img {
+		width: 100%;
+		max-height: auto;
+		position: relative;
+		right: auto;
+		z-index: 2;
+	}
+	.listen-issue .pin-event{
+		min-height:auto;
+		padding-left:0;
+	}
+	.listen-issue .vertical{
+		left:0;
+		font-size: 31px;
+	}
+	.listen-issue .wrapv:after{
+		left: 23%;
+		height: 310px;
+		top: 29px;
+	}
+	.listen-issue .img1{
+		width: 230px;
+		margin-top: 6px;
+		margin-left: 146px;
+	}
+	.calendar-box h5 span {
+		font-size: 30px;
+		position: relative;
+		color: #000;
+		right: auto;
+		width: auto;
+		margin-left: 15px;
+		top: -9px;
+		text-transform: uppercase;
+	}
+	.calendar-box p{
+		font-size:15px;
+		word-wrap: break-word;
+	}
+	form.subscribe input[type="submit"]{
+		padding: 8px 22px;
+	}
+	.footer-menu ul{
+		padding-left:0;
+		text-align:left;
+	}
+	footer ul li {
+		display: block;
+		margin: 7px 18px;
+	}
+	.single-banner-caption.about-caption{
+		width: 100%;
+		left: 0%;
+		top: 25%;
+	}
+	.single-banner-img img{
+		min-height:300px;
+		object-fit:cover;
+	}
+	.team-box.black, .team-box{
+		padding: 30px 20px;
+	}
+	.contact-advertising {
+		padding: 40px 19px;
+	}
+	.contact-details-block h4{
+		line-height:28px;
+	}
+	.calendar-box .event-heading h6{
+		min-height:auto;
+	}
+	.calendar-section #day-carousel .owl-nav .owl-next{
+		right: 3px;
+	}
+	.calendar-section #day-carousel .owl-nav .owl-prev{
+		left:3px;
+	}
+	.single-banner-caption h2{
+		font-size: 32px;
+	}
+	.single-banner-caption{
+		padding: 0 7px;
+	}
+	.how-to-gethh ul li {
+		display: block;
+		margin-right: 0;
+	}
+	.previous-issue-month ul li {
+		display: block;
+		margin-right: 0;
+		width: 100%;
+	}
+	.box label{
+		margin-bottom: 19px;
+	}
+	.submit-eventbox{
+		margin-right:0;
+	}
+}

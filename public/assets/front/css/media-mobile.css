@@ -1,0 +1,470 @@
+@media only screen and (max-width: 767px) {
+    h1 {
+    font-size: 28px;
+    }
+    
+    h2 {
+    font-size: 24px;
+    }
+    
+    h3 {
+    font-size: 22px;
+    }
+    
+    
+    h4 {
+    font-size: 20px;
+    }
+    
+    h5 {
+    font-size: 18px;
+    }
+    
+    h6 {
+    font-size: 16px;
+    }
+    
+    .show-mobile {
+    display: block;
+    width: 100%;
+    }
+    
+    .show-desktop,
+    .hhj-sponsor-events .col-md-2 {
+    display: none;
+    }
+    
+    header .container-fluid {
+    padding: 0px;
+    }
+    
+    .hj-banner-details {
+    top: 35px;
+    }
+    
+    .hj-banner-details h1 {
+    margin: 0px;
+    }
+    
+    .hj-banner-details h4 {
+    font-size: 18px;
+    }
+    
+    .hhj-sec-padding {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    }
+    
+    .hhj-search-menu ul li a {
+    width: 45px;
+    height: 45px;
+    margin: 0px 5px;
+    }
+    
+    .hhj-search-menu ul li a img {
+    margin-top: 8px;
+    width: 25px;
+    }
+    
+    .hhj-sponsor-events .hhj-sponsor .mobile-ads {
+    display: block !important;
+    margin: 10px 0px;
+    }
+    
+    .ads-block-1,
+    .ads-block-2 {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 10px;
+    background-color: #f7f7f7;
+    }
+    
+    .ads-block-1 a img,
+    .ads-block-2 a img {
+    border-radius: 10px;
+    }
+    
+    .hhj-sponsor {
+    margin-top: 10px;
+    }
+    
+    .hhj-sponsor-box {
+    max-width: 100%;
+    flex: 0 0 100%;
+    }
+    
+    .hhj-sinfo,
+    .featured-col {
+    height: 100%;
+    }
+    
+    .hhj-fea-box {
+    display: block;
+    border: none;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.07);
+    }
+    
+    .hhj-fea-img {
+    width: 100%;
+    }
+    
+    .hhj-fea-img img {
+    border-radius: 10px;
+    }
+    
+    .hhj-fea-details {
+    width: 100%;
+    padding: 10px 0px;
+    }
+    
+    .hhj-fea-dates {
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    border-radius: 5px;
+    }
+    
+    .hhj-fea-dates .date {
+    border-bottom: none;
+    border-right: 3px solid #ffffff;
+    padding: 10px;
+    width: 50%;
+    display: block;
+    }
+    
+    .hhj-fea-dates .time {
+    padding: 10px;
+    width: 50%;
+    display: block;
+    }
+    
+    .hhj-fea-dates h5,
+    .hhj-fea-dates h4 {
+    font-size: 18px;
+    line-height: 20px;
+    }
+    
+    .hhj-partners {
+    padding: 30px 0px;
+    }
+    
+    .jazz-subscription .col-md-5 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 5px;
+    }
+    
+    .jazz-subscription .col-md-2 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-top: 5px;
+    }
+    
+    .btn-black-bg {
+    width: 100%;
+    }
+    
+    .jazz-subscription .subscribe {
+    max-width: 100%;
+    }
+    
+    footer {
+    padding-top: 30px;
+    }
+    
+    .footer-menu ul {
+    display: block;
+    }
+    
+    .footer-menu ul li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    }
+    
+    .hhj-single-event {
+    padding: 20px 0px;
+    }
+    
+    .hhj-single-event h2 {
+    font-size: 24px;
+    }
+    
+    #countdown ul li {
+    padding: 5px;
+    font-size: 12px;
+    }
+    
+    #countdown {
+    margin-bottom: 30px;
+    }
+    
+    .event-descriptions h3 {
+    font-size: 18px;
+    }
+    
+    .events-details ul li img {
+    width: 22px;
+    }
+    
+    .events-details ul li {
+    font-size: 16px;
+    align-items: flex-start;
+    }
+    
+    .get-direction {
+    margin: 25px 0px;
+    }
+    
+    .get-direction form .evoInput {
+    width: 100%;
+    }
+    
+    .get-direction form {
+    display: block;
+    }
+    
+    .get-direction form .submit {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    }
+    
+    .buy-links ul li a {
+    padding: 8px 15px;
+    }
+    
+    .social-media {
+    gap: 3px;
+    }
+    
+    .social-media img {
+    width: 35px;
+    }
+    
+    .page-banner .page-banner-caption, 
+    .page-banner {
+    height: 150px;
+    }
+    
+    .page-banner .page-banner-caption h1 {
+    font-size: 30px;
+    }
+    
+    .hhj-calendar-date h1 {
+    font-size: 24px;
+    }
+    
+    .hhj-calendar-date #heading-carousel {
+    width: 275px;
+    }
+    
+    .hhj-calender-row {
+    padding: 30px 0px 60px 0px;
+    }
+    
+    .hhj-calendar-date #day-carousel {
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    display: grid;
+    gap: 5px;
+    }
+    
+    .hhj-calendar-date #day-carousel .item .day-box h3 {
+    font-size: 14px;
+    }
+    
+    .onclick_Inpputs #list {
+    padding: 0px;
+    margin: 0px;
+    }
+    
+    .hhj-calender {
+    padding: 10px 0px 20px 0px;
+    }
+    
+    .venue-search {
+    margin: 30px 0px 10px 0px;
+    }
+    
+    .venue-search img {
+    margin-left: 15px;
+    width: 18px;
+    }
+    
+    .venue-search input[type="text"] {
+    padding: 12px 38px !important;
+    }
+    
+    .hhj-venue-row {
+    padding-bottom: 30px;
+    }
+    
+    .explore-img img {
+    height: 100%;
+    }
+    
+    .venue-locations ul.list-block {
+    padding: 0px;
+    margin: 0px;
+    display: block !important;
+    }
+    
+    .venue-locations ul li {
+    margin-bottom: 10px;
+    }
+    
+    .venue-locations ul li span.toggleButton img {
+    position: absolute;
+    right: 20px;
+    background: #ffffff;
+    }
+    
+    .hhj-venue-list {
+    padding: 15px 0px 30px 0px;
+    }
+    
+    .hhj-festival .home-box {
+    margin-bottom: 10px;
+    }
+    
+    .hhj-single-festival,
+    .hhj-about {
+    padding: 15px 0px;
+    }
+    
+    .contact-info .container {
+    padding: 15px;
+    }
+    
+    .submit-eventbox {
+    padding: 15px 0px 20px 0px;
+    }
+    
+    .artist-row {
+    display: block;
+    }
+    
+    .add-artist span {
+    padding: 5px 10px;
+    }
+    
+    .gcaptcha {
+    margin-top: 0px;
+    overflow: hidden;
+    }
+    
+    .event-date select {
+    padding: 10px;
+    }
+    
+    .submit-eventbox select {
+    height: 40px !important;
+    }
+    
+    .hhj-submit-event {
+    padding: 15px 0px;
+    }
+    
+    .about-info .row,
+    .about-member {
+    padding: 15px 0px 10px 5px;
+    }
+    
+    .privacy_policy {
+    padding: 15px 0px;
+    }
+    
+    .contact-info {
+    padding: 15px;
+    }
+    
+    .single-contents,
+    .hhj-featured-artist {
+    padding: 20px 0px;
+    }
+    
+    .single-contents .container {
+    padding: 0px;
+    }
+    
+    .single-contents img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+    }
+    
+    .single-contents a {
+    overflow: hidden;
+    word-wrap: break-word;
+    }
+    
+    .single-contents h1 {
+    font-size: 24px;
+    }
+    }
+    
+    @media only screen and (max-width: 375px) {
+    .hj-banner-details {
+    top: 30px;
+    }
+    
+    .submit-event h2 {
+    margin-bottom: 10px;
+    }
+    }
+    
+    @media only screen and (max-width: 320px) {
+    h1 {
+    font-size: 24px;
+    }
+    
+    h2 {
+    font-size: 22px;
+    }
+    
+    h3 {
+    font-size: 20px;
+    }
+    
+    
+    h4 {
+    font-size: 18px;
+    }
+    
+    h5 {
+    font-size: 16px;
+    }
+    
+    h6 {
+    font-size: 14px;
+    }
+    
+    .hj-banner-details h4 {
+    font-size: 14px;
+    }
+    
+    .hhj-search-menu ul li a {
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    }
+    
+    .hhj-search-menu ul li a img {
+    margin-top: 6px;
+    width: 22px;
+    }
+    
+    .hhj-fea-dates h5,
+    .hhj-fea-dates h4 {
+    font-size: 16px;
+    line-height: 20px;
+    }
+    
+    .hj-banner-details {
+    top: 25px;
+    }
+    }

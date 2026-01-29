@@ -1,0 +1,537 @@
+@media only screen and (max-width: 1024px) {
+body {
+
+}
+
+h1 {
+font-size: 38px;
+}
+
+h2 {
+font-size: 24px;
+}
+
+h3 {
+font-size: 22px;
+}
+
+
+h4 {
+font-size: 20px;
+}
+
+h5 {
+font-size: 18px;
+}
+
+h6 {
+font-size: 16px;
+}
+
+.navbar-toggler {
+display: block !important;
+}
+
+.navbar-toggler {
+padding: 0px;
+cursor: pointer;
+}
+
+.navbar-toggler:focus {
+outline: none;
+}
+
+.navbar-toggler img {
+width: 30px;
+}
+
+.navbar-collapse {
+transition: transform 0.3s ease;
+transform: translateX(100%);
+position: absolute;
+top: 50px;
+right: -30px;
+background-color: #000000;
+width: 300px;
+border-radius: 7px;
+}
+
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+transform: translateX(0%);
+width: 300px;
+z-index: 999999;
+border-radius: 7px;
+right: 15px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+width: 100%;
+}
+
+.navbar-collapse.collapsing ul img,
+.navbar-collapse.collapsing ul .nav-submit-event,
+.navbar-nav {
+display: none;
+}
+
+.navbar-collapse.show .navbar-nav,
+.navbar-collapse.collapsing .navbar-nav {
+display: block !important;
+}
+
+.navbar-toggler {
+z-index: 1051;
+}
+
+.navbar-collapse.collapse.show ul {
+padding-top: 5px;
+margin: 0px;
+display: block;
+width: 100%;
+}
+
+.navbar-collapse.collapse.show ul li a {
+color: #ffffff;
+padding: 12px 15px 12px 20px !important;
+width: 100%;
+display: block;
+border-bottom: 1px solid #555555;
+}
+
+.navbar-collapse.collapse.show ul li:last-child a {
+border: none;
+}
+
+.navbar-collapse.collapse.show ul li a.dropdown-toggle {
+padding: 5px 15px 5px 20px !important;
+}
+
+.navbar-collapse.collapse.show ul li.dropdown.show .dropdown-menu.show {
+padding: 0px;
+margin: 0px;
+background: #555555;
+width: 100%;
+border-radius: 0px;
+}
+
+.site-nav .navbar ul .nav-item.dropdown .dropdown-menu a:hover {
+background: #000000;
+}
+
+.dropdown-menu {
+background: #555555;
+padding: 0px !important;
+margin: 0px !important;
+}
+
+.dropdown-toggle::after {
+top: 20px;
+position: absolute;
+right: 15px;
+}
+
+.navbar-collapse.collapse.show .nav-item.nav-user-login a {
+border-bottom: none;
+}
+
+.navbar-collapse.collapse.show .nav-link.nav-submit-event {
+text-align: center;
+border-radius: 0px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+}
+
+.page-banner .page-banner-caption h1 {
+font-size: 40px;
+}
+
+.desk-hide {
+display: block;
+}
+
+.mb-hide {
+display: none;
+}
+
+.page-banner .page-banner-caption,
+.page-banner {
+height: 250px;
+}
+
+.hj-banner-details {
+top: 30px;
+}
+
+.hhj-search-menu ul li a {
+width: 55px;
+height: 55px;
+}
+
+.hhj-search-menu ul li a img {
+margin-top: 10px;
+width: 28px;
+}
+
+.hhj-sinfo h3,
+.hhj-fea-details h2 {
+font-size: 20px;
+}
+
+.hhj-search-field .filter-icon {
+margin: -38px 30px 0px 0px;
+width: 30px;
+}
+
+.hhj-search-field .search-icon {
+width: 20px;
+}
+
+.section-title a {
+letter-spacing: 2px;
+}
+
+.hhj-sponsor-box {
+max-width: 50%;
+flex: 0 0 50%;
+}
+
+.hhj-sinfo p,
+.event-cost p,
+.hhj-fea-details p a,
+.price-box .paid,
+.price-box .free,
+.hhj-sinfo p a {
+font-size: 16px;
+}
+
+.hhj-sdate h6 {
+font-size: 18px;
+align-items: center;
+}
+
+.event-cost p img,
+.hhj-fea-details p img,
+.hhj-sinfo p img,
+.price-box img {
+width: 18px !important;
+}
+
+.hhj-sdate h6 img {
+width: 20px !important;
+}
+
+.hhj-buttons a,
+.hhj-fea-details h6 a {
+font-size: 16px;
+}
+
+.hhj-fea-details p {
+margin-bottom: 0px;
+font-size: 16px;
+line-height: 20px;
+}
+
+.hhj-fea-dates h4 {
+font-size: 16px;
+line-height: 20px;
+}
+
+.hhj-fea-dates h5 {
+font-size: 18px;
+}
+
+.hhj-sinfo {
+height: 155px;
+}
+
+.hhj-featured-events .row .col-md-6 {
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.featured-col {
+height: 140px;
+}
+
+.cal-col .hhj-sinfo h3,
+.cal-col .hhj-fea-details h2 {
+font-size: 22px;
+}
+
+.cal-col .hhj-sinfo p,
+.cal-col .event-cost p,
+.cal-col .hhj-sdate h6,
+.cal-col .hhj-fea-details p a,
+.cal-col .price-box .paid,
+.cal-col .price-box .free,
+.cal-col .hhj-sinfo p a {
+font-size: 16px;
+}
+
+.cal-col .hhj-sdate h6 img,
+.cal-col .event-cost p img,
+.cal-col .hhj-fea-details p img,
+.cal-col .hhj-sinfo p img,
+.cal-col .price-box img {
+width: 20px !important;
+}
+
+.cal-col .hhj-buttons a,
+.cal-col .hhj-fea-details h6 a {
+font-size: 18px;
+}
+
+.cal-col .hhj-fea-details p {
+margin-bottom: 0px;
+font-size: 16px;
+line-height: 20px;
+}
+
+.cal-col .hhj-fea-dates h4 {
+font-size: 16px;
+line-height: 20px;
+}
+
+.cal-col .hhj-fea-dates h5 {
+font-size: 20px;
+}
+
+.cal-col .hhj-sinfo {
+height: 160px;
+}
+
+.cal-col .featured-col {
+height: 155px;
+}
+
+.explore-img img {
+height: 175px;
+}
+
+.footer-menu ul {
+margin-bottom: 5px;
+}
+
+.footer-menu ul li {
+padding: 0px 5px;
+}
+
+.footer-menu ul li a {
+font-size: 14px;
+}
+
+.page-ending p {
+font-size: 12px;
+margin: 0px;
+}
+
+footer h3 {
+font-size: 24px;
+margin-bottom: 12px;
+}
+
+footer img {
+width: 35px;
+}
+
+.jazz-subscription .subscribe {
+max-width: 80%;
+}
+
+.jazz-subscription .col-md-5 {
+max-width: 40%;
+flex: 0 0 40%;
+}
+
+.jazz-subscription .col-md-2 {
+max-width: 20%;
+flex: 0 0 20%;
+}
+
+form.subscribe input[type=text] ,
+form.subscribe input[type=email]{
+width: 100%;
+font-size: 14px;
+}
+
+.hide {
+display: none;
+}
+
+#countdown ul li {
+padding: 15px;
+font-size: 16px;
+}
+
+.hhj-single-event h2 {
+font-size: 36px;
+}
+
+.event-descriptions h3 {
+font-size: 22px;
+}
+
+.empty-des {
+font-size: 18px;
+}
+
+.events-details ul li {
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.events-details ul li img {
+width: 28px;
+}
+
+.hhj-calendar-date #day-carousel .item .day-box h3 {
+font-size: 12px;
+}
+
+.hhj-calendar-date #day-carousel .item .day-box p {
+font-size: 10px;
+}
+
+.hhj-calendar-date #day-carousel .item {
+padding: 3px;
+}
+
+.hhj-calendar-date h1 {
+font-size: 28px;
+}
+
+.hhj-calendar-date #heading-carousel {
+width: 330px;
+}
+
+.hhj-venue-map,
+#map_canvas {
+height: 400px;
+}
+
+.map-pin {
+width: 35px;
+height: 35px;
+margin-top: 3px;
+}
+
+.map-pin img {
+width: 20px;
+}
+
+.hhj-festival .home-box {
+height: 300px;
+}
+
+.hhj-festival .home-box .calendar-box h6 {
+font-size: 18px;
+white-space: nowrap;
+overflow: hidden !important;
+text-overflow: ellipsis;
+padding: 0px 10px;
+}
+
+.hhj-festival .home-box .calendar-box p {
+font-size: 14px;
+white-space: nowrap;
+overflow: hidden !important;
+text-overflow: ellipsis;
+padding: 0px 10px;
+}
+
+.hhj-single-festival,
+.hhj-about {
+padding: 30px 0px;
+}
+
+.contact-info,
+.privacy_policy {
+padding: 30px 25px;
+}
+
+.hhj-festival {
+padding: 10px 0px 20px 0px;
+}
+
+.hhj-about h2,
+.hhj-how-to h2,
+.privacy_policy h1 {
+font-size: 24px;
+}
+
+.hhj-submit-event {
+padding: 30px 0px;
+}
+
+.modal-dialog .modal-content .modal-body h2 {
+font-size: 20px;
+}
+
+.jazz-subscription {
+padding: 40px 0px;
+}
+
+.contact-info h2 {
+font-size: 24px;
+}
+
+.contact-info p {
+font-size: 16px;
+}
+
+.festival-title,
+.festival-lineup h3 {
+font-size: 24px;
+}
+
+.festival-website a {
+font-size: 16px;
+}
+
+.festival-website a img {
+width: 22px;
+}
+
+.festival-descriptions h4 {
+font-size: 20px;
+}
+
+.festival-info {
+padding: 10px 20px 10px 20px;
+}
+}
+
+@media only screen and (max-width: 950px) {
+.hj-banner-details {
+top: 20px;
+}
+}
+
+@media only screen and (max-width: 900px) {
+.explore-img img {
+height: 145px;
+}
+
+.hhj-festival .home-box {
+height: 250px;
+}
+}
+
+@media only screen and (max-width: 840px) {
+.hj-banner-details {
+top: 10px;
+}
+
+.explore-img img {
+height: 130px;
+}
+
+.list-block li span.toggleButton {
+font-size: 16px;
+}
+
+.hhj-sdate h6 {
+font-size: 16px;
+}
+}

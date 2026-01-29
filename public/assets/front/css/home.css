@@ -1,0 +1,623 @@
+/**** Home Banner *****/
+.desk-hide {
+display: none;
+}
+
+.mb-hide {
+display: block;
+}
+
+.hj-home-banner {
+padding: 0px;
+}
+
+.hj-home-banner .row .col-md-12 {
+padding: 0px;
+}
+
+.hj-banner-details {
+position: absolute;
+width: 100%;
+top: 65px;
+text-align: center;
+}
+
+.hj-banner-details h1 {
+color: #FE0000;
+}
+
+.hj-banner-details h4 {
+color: #ffffff;
+}
+
+.hhj-home-logo img {
+margin: 0px auto;
+}
+
+.hhj-sec-padding {
+padding-top: 65px;
+padding-bottom: 30px;
+}
+
+.hhj-home-logo img {
+margin: 0px auto;
+display: block;
+max-width: 150px;
+width: 150px;
+}
+
+.hhj-home-search {
+margin-top: 30px;
+}
+
+.hhj-search-fields {
+display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+padding: 0px 40px 10px 40px;
+}
+
+.hhj-adv-box {
+width: 22.5%;
+}
+
+.clear-filter {
+width: 5%;
+}
+
+.hhj-search-field {
+margin-bottom: 10px;
+}
+
+.hhj-search-field input {
+border-radius: 100px;
+border: 1px solid #DFE1E5;
+padding: 10px 65px 10px 45px;
+}
+
+.hhj-adv-box input {
+border-radius: 100px;
+border: 1px solid #DFE1E5;
+padding: 0px 18px;
+height: 45px;
+font-weight: 500;
+font-size: 14px;
+}
+
+.hhj-adv-box select {
+border-radius: 100px;
+border: 1px solid #DFE1E5;
+padding: 0px 12px;
+height: 45px !important;
+font-size: 14px;
+color: #000000;
+font-weight: 500;
+}
+
+.hhj-adv-box select:focus {
+outline: none;
+border: 1px solid #000000;
+box-shadow: none;
+}
+
+.hhj-search-field .search-icon {
+position: absolute;
+margin: 12px 0px 0px 18px;
+}
+
+.hhj-search-field .filter-icon {
+position: absolute;
+right: 0px;
+margin: -43px 30px 0px 0px;
+cursor: pointer;
+}
+
+.clear-filter a {
+font-size: 14px;
+font-weight: 500;
+color: #000000;
+padding: 0px;
+display: flex;
+gap: 3px;
+}
+
+.clear-filter a img {
+width: 20px;
+}
+
+#toggleSection {
+display: none;
+}
+
+.suggesstion-box {
+background: #ffffff;
+border-radius: 7px;
+margin-top: 5px;
+overflow-y: auto;
+}
+
+.suggesstion-box ul {
+margin: 0px;
+padding: 0px;
+height: 200px;
+overflow-y: auto;
+border: 1px solid #DFE1E5;
+border-radius: 7px;
+}
+
+.suggesstion-box ul li {
+cursor: pointer;
+list-style: none;
+padding: 10px 15px;
+border-bottom: 1px solid #ededed;
+font-size: 14px;
+color: #000000;
+}
+
+.suggesstion-box ul li:hover {
+background: #ededed;
+}
+
+.suggesstion-box ul::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+background-color: #f7f7f7;
+}
+
+.suggesstion-box ul::-webkit-scrollbar {
+width: 10px;
+background-color: #999999;
+}
+
+.suggesstion-box ul::-webkit-scrollbar-thumb {
+background-color: #999999;
+}
+
+.hhj-search-menu {
+margin-top: 20px;
+}
+
+.hhj-search-menu ul {
+margin: 0px;
+padding: 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hhj-search-menu ul li {
+list-style: none;
+}
+
+.hhj-search-menu ul li a {
+display: block;
+overflow: hidden;
+border-radius: 100px;
+box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+width: 65px;
+height: 65px;
+text-align: center;
+margin: 0px 10px;
+border: 2px solid transparent;
+}
+
+.hhj-search-menu ul li a:hover {
+box-shadow: none;
+border: 2px solid #ededed;
+background: #f7f7f7;
+}
+
+.hhj-search-menu ul li a img {
+margin-top: 12px;
+}
+
+.hhj-sponsor-events {
+background: #FAFAFA;
+}
+
+.hhj-sponsor-events .container-fluid {
+padding: 0px;
+}
+
+.section-title h2 {
+text-align: center;
+}
+
+.section-title a {
+color: #999999;
+letter-spacing: 4px;
+text-align: center;
+display: block;
+font-size: 16px;
+text-decoration: underline;
+font-family: "Oswald", sans-serif;
+}
+
+.section-title a:hover {
+color: #000000;
+}
+
+.hhj-sponsor {
+margin-top: 25px;
+}
+
+.hhj-sponsor-box {
+padding-left: 10px;
+padding-right: 10px;
+margin-bottom: 20px;
+}
+
+.hhj-sbox {
+padding: 12px;
+background: #ffffff;
+border-radius: 10px;
+box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.07);
+}
+
+.hhj-sprofile {
+margin-bottom: 10px;
+}
+
+.hhj-sprofile img {
+width: 100% !important;
+border-radius: 10px;
+}
+
+.hhj-sinfo {
+height: 155px!important;
+overflow: hidden;
+}
+
+.hhj-sinfo h3 {
+font-size: 22px;
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+
+.hhj-sinfo p {
+margin: 0px;
+font-size: 16px;
+display: flex;
+gap: 5px;
+align-items: flex-start;
+white-space: nowrap;
+overflow: hidden !important;
+text-overflow: ellipsis;
+margin-bottom: 5px;
+}
+
+.hhj-sinfo p a {
+display: flex;
+gap: 5px;
+align-items: normal;
+font-size: 16px;
+white-space: nowrap;
+overflow: hidden !important;
+text-overflow: ellipsis;
+color: #000000;
+}
+
+.hhj-sinfo p img {
+width: 20px;
+}
+
+.hhj-sdate {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.hhj-sdate h6 {
+display: flex;
+gap: 3px;
+margin: 0px;
+align-items: end;
+font-size: 18px;
+}
+
+.hhj-sdate h6 img {
+width: 24px;
+}
+
+.hhj-buttons {
+background: #000000;
+text-align: center;
+padding: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.hhj-buttons a {
+color: #ffffff;
+font-family: 'Oswald';
+text-transform: uppercase;
+text-decoration: none;
+font-weight: 500;
+display: block;
+overflow: hidden;
+font-size: 20px;
+}
+
+.event-cost {
+margin-bottom: 12px;
+border-bottom: 1px solid #ededed;
+padding-bottom: 8px;
+}
+
+.event-cost p {
+margin: 0px;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 15px;
+display: flex;
+align-items: center;
+}
+
+.event-cost p.free {
+color: #2eb82e;
+}
+
+.event-cost p.paid {
+color: #FE0000;
+}
+
+.event-cost p img {
+width: 22px;
+}
+
+.hhj-left-sidebar {
+position: absolute;
+left: 0px;
+}
+
+.hhj-left-sidebar span a,
+.hhj-right-sidebar span a {
+display: block;
+width: auto;
+}
+
+.hhj-left-sidebar span a img,
+.hhj-right-sidebar span a img {
+width: 215px;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+.hhj-right-sidebar {
+position: absolute;
+right: 0px;
+}
+    
+.hhj-fea-box {
+display: flex;
+border: 1px solid #dddddd;
+border-radius: 10px;
+background: #ffffff;
+}
+
+.hhj-fea-img {
+width: 30%;
+}
+
+.hhj-fea-details {
+width: 58%;
+padding: 10px 15px;
+}
+
+.hhj-fea-dates {
+width: 12%;
+display: grid;
+grid-template-columns: 100%;
+text-align: center;
+margin: 5px;
+background: #333333;
+border-radius: 10px;
+}
+
+.hhj-fea-dates .date {
+border-bottom: 3px solid #ffffff;
+display: flex;
+align-items: center;
+padding: 0px 10px;
+}
+
+.hhj-fea-dates h4 {
+margin: 0px;
+color: #ffffff;
+font-size: 16px;
+}
+
+.hhj-fea-dates .time {
+display: flex;
+align-items: center;
+padding: 10px;
+justify-content: center;
+}
+
+.hhj-fea-dates h5 {
+margin: 0px;
+color: #ffffff;
+font-size: 20px;
+flex: 1;
+}
+
+.hhj-fea-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+.hhj-fea-details p img {
+width: 20px;
+}
+
+.hhj-fea-details h2 {
+font-size: 22px;
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+
+.hhj-fea-details p {
+margin-bottom: 3px;
+display: flex;
+align-items: center;
+font-size: 16px;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+color: #000000;
+text-decoration: none;
+gap: 3px;
+line-height: 28px;
+}
+
+.hhj-fea-details p a {
+font-size: 16px;
+color: #000000;
+text-decoration: none;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+line-height: 28px;
+}
+
+.hhj-fea-dates img {
+width: 30px;
+}
+
+.hhj-fea-details .price-box {
+gap: 2px;
+margin: 8px 0px;
+align-items: center;
+}
+
+.price-box img {
+width: 22px !important;
+}
+
+.price-box .free {
+color: #2eb82e;
+font-weight: 600;
+font-size: 16px;
+}
+
+.price-box .paid {
+color: #FE0000;
+font-weight: 600;
+font-size: 18px;
+}
+
+.hhj-fea-details h6 a {
+background: #FE0000;
+color: #ffffff;
+text-decoration: none;
+padding: 7px 15px;
+border-radius: 100px;
+display: block;
+width: fit-content;
+text-transform: uppercase;
+font-family: 'Oswald';
+}
+
+.hhj-featured-events .row {
+margin-top: 30px;
+}
+
+.hhj-featured-events .row .col-md-6 {
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 20px;
+}
+
+.more_info_artist_btn {
+display: flex;
+gap: 5px;
+text-transform: uppercase;
+align-items: center;
+font-family: "Oswald", sans-serif;
+font-weight: 600;
+color: #000000;
+padding-bottom: 10px;
+text-decoration: none !important;
+}
+
+.more_info_artist_btn:hover {
+color: #000000;
+}
+
+.more_info_artist_btn img {
+width: 22px;
+}
+
+/* styles.css */
+
+/* styles.css */
+.carousel-container {
+overflow: hidden;
+max-width: 100%;
+position: relative;
+}
+
+.carousel {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+flex: 0 0 auto;
+display: block;
+}
+
+.carousel-item img {
+width: 100%;
+border-radius: 7px;
+}
+
+.carousel-button {
+top: 50%;
+transform: translateY(-50%);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.prev {
+left: 10px;
+}
+
+.next {
+right: 10px;
+}
+
+.hhj-partners {
+background: #ffffff;
+padding: 60px 0px 80px 0px;
+}
+
+.hhj-partners h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.featured-col {
+height: 160px;
+overflow: hidden;
+}
+
+.sponsor-row .hhj-buttons {
+background: #FE0000;
+}
+
+.sponsor-row .hhj-sinfo {
+margin-bottom: 0px!important;
+}
+
