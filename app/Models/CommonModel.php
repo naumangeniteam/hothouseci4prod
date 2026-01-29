@@ -173,17 +173,23 @@ class CommonModel extends Model
         //   }
 
         // ✅ Apply LIKE conditions correctly
-        if (!empty($wcon['like']) && is_array($wcon['like'])) {
-            //  echo"<pre>";print_r($wcon['like']);die;
-            $builder->groupStart(); // Start a grouping for OR conditions
-            foreach ($wcon['like'] as $column => $value) {
-                $builder->orLike($column, $value);
+        if (!empty($wcon['where']) && is_array($wcon['where'])) {
+            foreach ($wcon['where'] as $condition) {
+                if (
+                    isset($condition['field'], $condition['op'], $condition['value']) &&
+                    $this->isValidField($condition['field']) &&
+                    in_array($condition['op'], ['=', '!=', '>', '<', '>=', '<='], true)
+                ) {
+                    $builder->where(
+                        $condition['field'] . ' ' . $condition['op'],
+                        $condition['value']
+                    );
+                }
             }
-            $builder->groupEnd(); // End grouping
         }
 
         // Sorting and Pagination
-        if (!empty($shortField)) {
+        if (!empty($shortField) && $this->isValidField($shortField)) {
             $builder->orderBy($shortField);
         }
         //   if (!empty($num_page)) {

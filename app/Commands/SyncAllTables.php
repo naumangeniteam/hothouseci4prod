@@ -50,40 +50,62 @@ class SyncAllTables extends BaseCommand
      */
     protected $options = [];
 
+    private function isValidPgIdentifier(string $name): bool
+    {
+        return preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $name) === 1;
+    }
+
+    private function isValidTable($pgsql, string $table): bool
+    {
+        $result = $pgsql->query(
+            "SELECT 1 FROM pg_class WHERE relname = ? AND relkind = 'r'",
+            [$table]
+        )->getRow();
+
+        return $result !== null;
+    }
+
     private function syncSequenceForTable($pgsql, string $table)
     {
         try {
-            $serialCols = $pgsql->query("
-                SELECT a.attname AS column_name
-                FROM pg_attribute a
-                JOIN pg_class t ON a.attrelid = t.oid
-                JOIN pg_namespace n ON t.relnamespace = n.oid
-                WHERE t.relname = ?
-                  AND a.attnum > 0
-                  AND NOT a.attisdropped
-                  AND pg_get_serial_sequence(format('%I.%I', n.nspname, t.relname), a.attname) IS NOT NULL
-            ", [$table])->getResultArray();
-
-            if (empty($serialCols)) {
-                return; // No auto-increment columns
+            // Validate table name strictly
+            if (!$this->isValidPgIdentifier($table) || !$this->isValidTable($pgsql, $table)) {
+                throw new \RuntimeException("Invalid table name: {$table}");
             }
 
-            // protect table name by doubling any quotes (to be safe)
-            $safeTable = str_replace('"', '""', $table);
-            $qualifiedTable = 'public."' . $safeTable . '"';
+            $serialCols = $pgsql->query("
+            SELECT a.attname AS column_name
+            FROM pg_attribute a
+            JOIN pg_class t ON a.attrelid = t.oid
+            JOIN pg_namespace n ON t.relnamespace = n.oid
+            WHERE t.relname = ?
+              AND a.attnum > 0
+              AND NOT a.attisdropped
+              AND pg_get_serial_sequence(format('%I.%I', n.nspname, t.relname), a.attname) IS NOT NULL
+        ", [$table])->getResultArray();
+
+            if (empty($serialCols)) {
+                return;
+            }
+
+            $qualifiedTable = 'public."' . $table . '"';
 
             foreach ($serialCols as $sc) {
                 $col = $sc['column_name'];
 
-                // Build SQL carefully: column name is injected into the subquery with quotes,
-                // table is already properly quoted in $qualifiedTable.
-                $sql = "SELECT setval(
-                            pg_get_serial_sequence(?, ?),
-                            (SELECT COALESCE(MAX(\"{$col}\"), 0) FROM {$qualifiedTable}),
-                            true
-                        )";
+                // Validate column name
+                if (!$this->isValidPgIdentifier($col)) {
+                    continue;
+                }
 
-                // Bindings: first param = table identifier for pg_get_serial_sequence, second = column name
+                $sql = "
+                SELECT setval(
+                    pg_get_serial_sequence(?, ?),
+                    (SELECT COALESCE(MAX(\"{$col}\"), 0) FROM {$qualifiedTable}),
+                    true
+                )
+            ";
+
                 $pgsql->query($sql, [$qualifiedTable, $col]);
             }
 
