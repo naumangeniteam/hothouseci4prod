@@ -1,0 +1,86 @@
+<?php	
+return [
+    'statussuccess'   => 'Status changed successfully.',
+    'INVALID_ACCESS'				    			=> 	"Invalid Access",
+    'ATMID_NOTFOUND'				    			=> 	"ATM ID Not Found",
+    'USER_NOTFOUND'				    			=> 	"User Not Found",
+    'USER_INACTIVATE'			    			=> 	"User Not Activated",
+    'ACCOUNT_BLOCKED'			    			=> 	"Your Account is Suspended, Please Contact Administrator",
+    'SUCCESSFULL_LOGIN'				    		=> 	"Login Successfully, Redirecting Please Wait...",
+    'invalidpassword'	            			=> 	'Log failed. Password do not match',
+    'invalidlogindetails'            			=> 	"You have entered an invalid email or password",
+    'emailnotavailable'            				=> 	"This email id is not available.",
+    'accountblock'            					=> 	"You account is blocked. Please contact to administration.",
+    'invalidemail'            					=> 	"You have entered an invalid email",
+    'invalidmobile'            					=> 	"You have entered an invalid mobile number",
+    'sendforgotpassmail'            				=> 	"Password recovery link send to your e-mail.",
+    'sendotptomobile'            				=> 	"We’ve sent OTP on your email",
+    'invalidotp'            						=> 	"You have entered an invalid otp",
+    'passrecoversuccess'            				=> 	"You have recover password successfully.",
+    'loginanothersystem'            				=> 	"You have already login in another system.",
+    'passwordchangesuccess'            			=> 	"You have change password successfully.",
+    'alreadyapproved'            				=> 	"This account is already approved.",
+    'approvedsuccess'            				=> 	"Astrologer approved.",
+
+    ////////////////////////    alert mesaage  //////////
+    'addsuccess'									=>	'Data added successfully.',
+    'updatesuccess'								=>	'Data updated successfully.',
+    'uploadimgsuccess'							=>	'Upload image successfully.',
+    'uploadimgerror'						    	=>	'Please Upload image.',
+    'deletesuccess'								=>	'Data deleted successfully.',
+    'statussuccess'								=>	'Status changed successfully.',
+    'importsuccess'								=>	'Import status changed successfully.',
+    'approvesuccess'								=>	'Approved successfully.',
+    'multipledeletesuccess'						=>	'Miltiple data deleted successfully.',
+    'restoresuccess'									=>	'Data restore successfully.',
+
+    'addwarning'									=>	'Data not add successfully.',
+    'updatewarning'								=>	'Data not update successfully.',
+    'deletewarning'								=>	'Data not delete successfully.',
+
+    'adderror'									=>	'Data not add successfully.',
+    'updateerror'								=>	'Data not update successfully.',
+    'deleteerror'								=>	'Data not delete successfully.',
+    'blockerror'									=>	'Data not delete successfully.',
+    'alreadyexist'								=>	'Data already exist.',
+
+    'accessdenied'								=>	'You are not able to access this page.',
+    'accessstatusdenied'							=>	'You are not able to change status.',
+    'accessdeletedenied'							=>	'You are not able to delete data.',
+
+    'PERERROR'									=>	'Please give atlist one module permission.',
+
+    'PHONEERROR'									=>	'Please enter correct number.',
+
+    'action'										=>	'Action',
+    'inactive'									=>	'Inactive',
+    'block'										=>	'Block',
+    'active'										=>	'Active',
+    'deleted'									=>	'Deleted',
+    'publish'									=>	'Approved',
+    'unpublish'									=>	'Unapproved',
+    'reject'										=>	'Rejected',
+
+    'initialize'									=>	'Initialize',
+    'success'									=>	'Payment Success',
+    'cancel'										=>	'Payment Cancelled',
+    'error'										=>	'Payment Error',
+    'refund'										=>	'Payment Refund',
+    'pending'									=>	'Payment Pending',
+    'released'									=>	'Payment Released',
+
+    'account_pending'							=>	'Pending',
+    'account_verified'							=>	'Verified',
+
+    'property_pending'							=>	'Pending',
+    'inspector_verify'							=>	'Verified by Inspector',
+    'inspector_reject'							=>	'Rejected by Inspector',
+    'admin_verify'								=>	'Verified by Admin',
+    'admin_reject'								=>	'Rejected by Admin',
+
+    'property_assigned'							=>	'Property Assigned',
+
+    'login'										=>	'Login',
+    'logout'										=>	'Logout',
+    'trash'										=>	'Trash',
+];

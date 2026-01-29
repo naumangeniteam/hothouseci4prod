@@ -1,0 +1,69 @@
+<?php if(!empty($event_tbl)): 
+foreach($event_tbl as $key => $item):
+                $currentdate= strtotime(date('Y-m-d'));
+                  $evetntstart= strtotime($item["start_date"]);
+                   $evetntend= strtotime($item["end_date"]);
+                  // print_r($evetntstart);die;
+                  
+                  $getVenuName = $this->db->select('venue_title')->from('venue_tbl')->where('id', $item['venue_id'])->get()->row();
+                //  $date = DateTime::createFromFormat('Y-m-d', $item["start_date"]);
+                  $date = DateTime::createFromFormat('Y-m-d', $datae);
+                  //print_r($date);die;
+                  $month_num1=  $date->format('m');
+                  $month_name1 = date("F", mktime(0, 0, 0, $month_num1, 10));
+                  $event_start_time = date('h:i a', strtotime($item['event_start_time']));
+                  //print_r($date);die;
+                  if($currentdate == $evetntstart || $currentdate == $evetntend){
+                           ?>
+              
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                     <div class="calendar-box">
+                        <div class="row">
+                           <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                              <h5><?php   echo $date->format('d');   ?> <span><?php   echo substr(strtoupper(date("F", mktime(0, 0, 0, $month_num1, 10))), 0, 3);   ?>
+                                 <?php   echo substr(strtoupper($date->format("l")),0 , 3);   ?></span>
+                              </h5>
+                              <p class="text-left"><?php echo  strtoupper($event_start_time);   ?></p>
+                           </div>
+                           <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                              <div class="event-heading">
+                                 <h6><?=$item['event_title']?></h6>
+                              </div>
+                           </div>
+                        </div>
+                        <p><?=$getVenuName->venue_title?></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <?=$item['location_name']?>,<?=$item['location_address']?></p>
+                        <p><?=$item['website']?></p>
+                        <p><i class="fas fa-phone-alt"></i> <?=$item['phone_number']?> </p>
+                        <p><a href="<?php echo getCurrentControllerPath('event_detail/'.$item['event_id'])?>" class="online-btn">View event detail</a></p>
+                     </div>
+                  </div>
+              
+               <?php }elseif($currentdate != $evetntstart){ ?>
+               <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="calendar-box">
+                     <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                           <h5><?php   echo $date->format('d');   ?> <span><?php   echo substr(strtoupper(date("F", mktime(0, 0, 0, $month_num1, 10))), 0, 3);   ?>
+                              <?php   echo substr(strtoupper($date->format("l")),0 , 3);   ?></span>
+                           </h5>
+                           <p class="text-left"><?php echo  strtoupper($event_start_time);   ?></p>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                           <div class="event-heading">
+                              <h6><?=$item['event_title']?></h6>
+                           </div>
+                        </div>
+                     </div>
+                     <p><?=$getVenuName->venue_title?></p>
+                     <p><i class="fas fa-map-marker-alt"></i> <?=$item['location_name']?>,<?=$item['location_address']?></p>
+                     <p><?=$item['website']?></p>
+                     <p><i class="fas fa-phone-alt"></i> <?=$item['phone_number']?> </p>
+                     <p><a href="<?php echo getCurrentControllerPath('event_detail/'.$item['event_id'])?>" class="online-btn">View event detail</a></p>
+                  </div>
+               </div>
+            <?php }endforeach;  ?>
+
+       <?php  else: ?>
+    <h3 style="text-align:center;margin-left: 40%;margin-top:20px;">No Events Found</h3>
+<?php endif; 

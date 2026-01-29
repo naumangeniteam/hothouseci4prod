@@ -1,0 +1,226 @@
+<?php
+
+
+class Home extends BaseController {
+
+	public function  __construct() 
+	{ 
+		
+		//error_reporting(E_ALL ^ E_NOTICE);  
+		error_reporting(0);  
+		$this->admin_model = new AdminModel();
+		$this->emailTemplateModel = new EmailtemplateModel();
+        $this->smsModel = new SmsModel();
+        $this->notificationModel = new NotificationModel();
+        $this->common_model = new CommonModel();
+        $this->frontModel = new FrontModel();
+        $this->layouts = new Layouts();
+        $this->session = session();
+		$this->lang = service('language'); 
+$this->lang->setLocale('front');
+		helper('common');
+	} 
+	
+	/* * *********************************************************************
+	 * * Function name 	: index
+	 * * Developed By 	: Megha Kumari
+	 * * Purpose  		: This function for home page data
+	 * * Date 			: 18/01/23
+	 * * **********************************************************************/
+	public function index()
+	{	
+		$data = array();
+        /********************************************Banner Section******************************/
+		$where['where'] 		=	['page_name' => 'Home Page'];//"status = 'A'";
+		$tbl 					=	'banner_tbl as ftable';
+		$shortField 			=	'id DESC';
+
+		$shortField1 			=	'type_name ASC';
+		 $data['banner'] 		= 	$this->common_model->getData('multiple', $tbl,$where,$shortField,6,0);
+		  /********************************************About Section******************************/
+		$where1['where'] 		=	"is_active = '1'";//"status = 'A'";
+		$tbl1 					=	'about_us_tbl as ftable';
+		$shortField12 			=	'id DESC';
+
+		$shortField123 			=	'type_name ASC';
+		 $data['about'] 		= 	$this->common_model->getData('multiple', $tbl1,$where1,$shortField12,6,0);
+	 /********************************************Our Partners Section******************************/
+	 $where2['where'] 		=	"is_active = '1'";//"status = 'A'";
+	 $tbl2 					=	'slider_tbl as ftable';
+	 $shortField2 			=	'id DESC';
+
+	 $shortField2			=	'type_name ASC';
+	  $data['slider_tbl'] 		= 	$this->common_model->getData('multiple', $tbl2,$where2);
+	//  print_r($data['slider_tbl']);die();
+  /********************************************Img Section******************************/
+  $where3['where'] 		=	"is_active = '1'";//"status = 'A'";
+  $tbl3 					=	'home_image as ftable';
+  $shortField2 			=	'id DESC';
+
+  $shortField3			=	'type_name ASC';
+   $data['home_image'] 		= 	$this->common_model->getData('multiple', $tbl3,$where3);
+ /********************************************Feactrure Section******************************/
+ $where4['where'] 		=	"is_home = '1'";//"status = 'A'";
+ $tbl4 					=	'blog_tbl as ftable';
+ $shortField4 			=	'id DESC';
+
+ $shortField4			=	'type_name ASC';
+  $data['blog_tbl'] 		= 	$this->common_model->getData('multiple', $tbl4,$where4);
+/********************************************Seo Section******************************/
+  $where5['where'] 		=	['page_name' => 'Home Page'];
+  $tbl5 					=	'seo_tbl as ftable';
+  $shortField5			=	'id DESC';
+
+  $shortField6 			=	'type_name ASC';
+  $data['seo_section'] 		= 	$this->common_model->getData('single', $tbl5,$where5);
+    /********************************************Subscribe form******************************/
+	if($this->input->post('Savesubsc')):
+			
+		$error					=	'NO';
+			$this->form_validation->set_rules('email', 'Email Address', 'required');
+		   $this->form_validation->set_message('trim|required', 'Enter %s');
+		
+		if($this->form_validation->run() && $error == 'NO'): 
+				
+			
+			    $param['email']				= 	$this->input->post('email');	
+				$param['creation_date']				= 	date('Y-m-d h:i:s');
+				$param['status']			=	'A'; 
+				$alastInsertId				=	$this->common_model->addData('subscribe_tbl',$param);
+				$this->session->setFlashdata('alert_success',lang('statictext_lang.addsuccess'));
+				$this->session->setFlashdata('alert_success', 'Details Submitted Successfully');
+				redirect('home');
+		else:
+		$this->session->setFlashdata('alert_error','Please Enter Email Address');
+		endif;
+	endif; 
+
+/*	$tbl6 					=	'event_tbl as ftable';
+	$shortField6 			=	'event_id DESC';
+
+	$shortField77			=	'type_name ASC';
+	$shortField6 			=	'id DESC';
+	 $data['event_tbl'] 		= 	$this->common_model->getData('multiple', $tbl6,);*/
+	//print_r($data['event_tbl']);die();
+  
+	$this->layouts->set_title($data['seo_section']['title']);
+	$this->layouts->set_description($data['seo_section']['description']);
+	$this->layouts->set_keyword($data['seo_section']['keywords']);
+        $this->layouts->front_view('index',array(),$data);
+
+	}
+	
+	
+
+	/* * *********************************************************************
+	 * * Function name 	: subscribe
+	 * * Developed By 	: Megha Kumari
+	 * * Purpose  		: This function for newslater subscription
+	 * * Date 			: 18/01/23
+	 * * **********************************************************************/
+	public function subscribe()
+	{	
+		$return = '';
+		if($this->input->post('subscribe_email')){	
+			$param['name'] 				=	$this->input->post('subscribe_name');
+			$param['emal'] 				=	$this->input->post('subscribe_email');
+			$param['creation_date'] 	=	(int)$this->timezone->utc_time();
+			$param['created_ip'] 		=	currentIp();
+			$res = '';
+			if($param['emal']){	
+				$res = $this->common_model->getDataByParticularField('subscription', 'emal', $param['emal']);
+				if($res != ''){		
+					$return = 'NO';//lang('statictext_lang.ALREDY_EXIST');
+				}else{	
+					$nsertID = $this->common_model->addData('subscription', $param);
+					$return = 'YES';//lang('statictext_lang.SUBSCRIBED');
+				}
+			}
+		}
+		echo $return; die;
+	}
+
+	/* * *********************************************************************
+	 * * Function name 	: getintuch
+	 * * Developed By 	: Afsar Ali
+	 * * Purpose  		: This function for get in tuch
+	 * * Date 			: 04 JULY 2022
+	 * * **********************************************************************/
+	public function getintuch()	
+	{	
+		if($this->input->post('subscribe_email')){	
+			$param['name']			=	ucwords($this->input->post('name'));
+			$param['email']			=	$this->input->post('email');
+			$param['mobile']		=	$this->input->post('mobile');
+			//$param['reason']		=	$this->input->post('reason');
+			$param['message']		=	$this->input->post('message');
+			$param['created_at']	=	(int)$this->timezone->utc_time();
+			$param['created_ip']	=	currentIp();
+
+			$isInsert 	=	$this->common_model->addData('contact',$param);
+		}
+		echo 'Thank you for sharing this with us.'; die;
+	}
+
+	/* * *********************************************************************
+	 * * Function name 	: successStories
+	 * * Developed By 	: Afsar Ali
+	 * * Purpose  		: This function for success Stories
+	 * * Date 			: 04 JULY 2022
+	 * * **********************************************************************/
+	public function successStories()
+	{	
+		$data = array();
+
+		$this->layouts->set_title('EFL | Educator for Life');
+		$this->layouts->set_description('');
+		$this->layouts->set_keyword('');
+
+		$this->layouts->front_view('successstories',array(),$data);
+	}
+
+	/* * *********************************************************************
+	 * * Function name 	: getcoursebyajax
+	 * * Developed By 	: Afsar Ali
+	 * * Purpose  		: This function for get course by ajax
+	 * * Date 			: 04 JULY 2022
+	 * * **********************************************************************/
+	public function getcoursebyajax()
+	{	
+		$where['where'] 			=	"status = 'A'";
+		if($this->input->post('domainList')):
+			$where['where'] 		.=	" AND domain IN ('".implode("','",$this->input->post('domainList'))."')";
+		endif;
+		if($this->input->post('courseTypeList')):
+			$where['where'] 		.=	" AND course_type IN ('".implode("','",$this->input->post('courseTypeList'))."')";
+		endif;
+		$tbl 						=	'course as ftable';
+		$shortField 				=	'id DESC';
+
+		$data['course'] 			= 	$this->common_model->getData('multiple', $tbl,$where,$shortField,6,0);
+
+		$this->layouts->front_view('getcoursebyajax',array(),$data,'onlyview');
+	}
+	/* * *********************************************************************
+	 * * Function name 	: getcoursebyajax
+	 * * Developed By 	: Afsar Ali
+	 * * Purpose  		: This function for get course by ajax
+	 * * Date 			: 06 JULY 2022
+	 * * **********************************************************************/
+	public function getmenucoursebyajax()
+	{	
+		$where['where'] 			=	"status = 'A'";
+		if($this->input->post('menudomainList')):
+			$where['where'] 		.=	" AND domain IN ('".implode("','",$this->input->post('menudomainList'))."')";
+		endif;
+		if($this->input->post('menucourseTypeList')):
+			$where['where'] 		.=	" AND course_type IN ('".implode("','",$this->input->post('menucourseTypeList'))."')";
+		endif;
+		$tbl 						=	'course as ftable';
+		$shortField 				=	'id DESC';
+
+		$data['course'] 			= 	$this->common_model->getData('multiple', $tbl,$where,$shortField,6,0);
+
+		$this->layouts->front_view('getmenucoursebyajax',array(),$data,'onlyview');
+	}
+}
