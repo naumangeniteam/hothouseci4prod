@@ -1,0 +1,207 @@
+@media only screen and (max-width: 1600px) {
+h1 {
+font-size: 45px;
+}
+
+h2 {
+font-size: 28px;
+}
+
+h3 {
+font-size: 24px;
+}
+
+
+h4 {
+font-size: 20px;
+}
+
+h5 {
+font-size: 18px;
+}
+
+h6 {
+font-size: 16px;
+}
+
+.hhj-sinfo h3,
+.hhj-fea-details h2 {
+font-size: 18px;
+}
+
+.hhj-sinfo p,
+.event-cost p,
+.hhj-sdate h6,
+.hhj-fea-details p a,
+.price-box .paid,
+.price-box .free,
+.hhj-sinfo p a {
+font-size: 14px;
+}
+
+.hhj-sdate h6 img,
+.event-cost p img,
+.hhj-fea-details p img,
+.hhj-sinfo p img,
+.price-box img {
+width: 18px !important;
+}
+
+.hhj-buttons a,
+.hhj-fea-details h6 a {
+font-size: 16px;
+}
+
+.hhj-fea-details p {
+margin-bottom: 0px;
+font-size: 14px;
+line-height: 20px;
+}
+
+.hhj-fea-dates h4 {
+font-size: 14px;
+line-height: 20px;
+}
+
+.hhj-fea-dates h5 {
+font-size: 18px;
+}
+
+.hhj-sinfo {
+height: 145px;
+}
+
+.featured-col {
+height: 140px;
+}
+
+.cal-col .hhj-sinfo h3,
+.cal-col .hhj-fea-details h2 {
+font-size: 22px;
+}
+
+.cal-col .hhj-sinfo p,
+.cal-col .event-cost p,
+.cal-col .hhj-sdate h6,
+.cal-col .hhj-fea-details p a,
+.cal-col .price-box .paid,
+.cal-col .price-box .free,
+.cal-col .hhj-sinfo p a {
+font-size: 16px;
+}
+
+.cal-col .hhj-sdate h6 img,
+.cal-col .event-cost p img,
+.cal-col .hhj-fea-details p img,
+.cal-col .hhj-sinfo p img,
+.cal-col .price-box img {
+width: 20px !important;
+}
+
+.cal-col .hhj-buttons a,
+.cal-col .hhj-fea-details h6 a {
+font-size: 18px;
+}
+
+.cal-col .hhj-fea-details p {
+margin-bottom: 0px;
+font-size: 16px;
+line-height: 20px;
+}
+
+.cal-col .hhj-fea-dates h4 {
+font-size: 16px;
+line-height: 20px;
+}
+
+.cal-col .hhj-fea-dates h5 {
+font-size: 20px;
+}
+
+.cal-col .hhj-sinfo {
+height: 160px;
+}
+
+.cal-col .featured-col {
+height: 155px;
+}
+
+.explore-img img {
+height: 225px;
+}
+}
+
+@media only screen and (max-width: 1440px) {
+.hj-banner-details {
+top: 40px;
+}
+}
+
+@media only screen and (max-width: 1425px) {
+.hhj-calendar-date #day-carousel .item {
+padding: 7px;
+}
+
+.hhj-calendar-date #day-carousel .item .day-box h3 {
+font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 1300px) {
+.hhj-sinfo {
+height: 135px;
+}
+
+.featured-col {
+height: 130px;
+}
+
+.hhj-sdate h6 {
+font-size: 13px;
+gap: 1px;
+}
+}
+
+@media only screen and (max-width: 1280px) {
+.hhj-sdate h6 {
+font-size: 11px;
+}
+
+.hhj-sdate h6 img {
+width: 14px !important;
+}
+}
+
+@media only screen and (max-width: 1240px) {
+.site-nav a.navbar-brand img {
+max-width: 95px;
+width: 95px;
+}
+
+.site-nav .navbar ul li a {
+padding: 8px 8px 7px 8px !important;
+font-size: 14px;
+}
+
+.nav-user-login img {
+width: 18px;
+}
+
+.nav-user-login {
+margin-left: 0px;
+}
+
+#countdown ul li {
+font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+.hhj-calendar-date #day-carousel .item {
+padding: 5px;
+}
+
+.hhj-calendar-date #day-carousel .item .day-box h3 {
+font-size: 16px;
+}
+}

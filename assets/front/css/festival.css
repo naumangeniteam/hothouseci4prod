@@ -1,0 +1,239 @@
+#day-carousel {
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: unset;
+}
+
+.calendar-box {
+    min-height: 299px;
+
+}
+
+.partner-button {
+    margin-top: 0;
+}
+
+.owl-height {
+    height: 50px !important;
+}
+
+.owl-stage {
+    transform: translate3d(-700px, 0px, 0px) !important;
+    transition: all 0.8s ease 0s !important;
+    width: 2100px !important;
+}
+
+owl-stage-outer {
+    height: 50px !important;
+}
+
+.selectdate>.day-box {
+    background-color: #d6171f !important;
+}
+
+.day-box {
+    transition: 600ms all;
+    cursor: pointer;
+}
+
+#calendar-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background: url("../front/img/loader.webp") no-repeat center #fff;*/
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    background-size: 100px;
+    transition: 600ms all;
+    transform: scale(1);
+}
+
+#calendar-section {
+    position: relative;
+}
+
+#calendar-section.expand::before {
+    transform: scale(0);
+}
+
+.selectdate * {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.owl-nav button {
+    outline: none !important;
+}
+
+/* .chooseDay .item {
+display: table-cell; 
+}*/
+.sortAsc {
+    background-color: #fbe1e1;
+    color: #ba5d60;
+    font-family: 'open sans', 'arial';
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.new {
+    display: block;
+
+    float: right;
+    margin-right: -330px;
+    border: none;
+    margin-top: -16px;
+}
+
+.calendar-box p {
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.home-box {
+    /* overflow: hidden; */
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 5px 0px rgb(219 219 219);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(219, 219, 219, 1);
+    box-shadow: 0px 1px 5px 0px rgb(219 219 219);
+
+}
+
+.calendar-box h5 span {
+    font-size: 22px;
+    position: absolute;
+    color: #fff !important;
+    right: -16px;
+    width: 58px;
+    top: 7px;
+    text-transform: uppercase;
+}
+
+.calendar-box h5 {
+    font-size: 50px;
+    color: #fff !important;
+    font-family: 'Oswald', sans-serif;
+}
+
+.calendar-box .event-heading h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff !important;
+    line-height: 25px;
+    margin-top: 8px;
+    min-height: 90px;
+}
+
+.festivals-content {
+    margin-top: 120px;
+    color: #fff;
+}
+
+.festival-heading {
+    text-align: center;
+    font-size: 17px;
+}
+
+.fest-loc {
+    padding: 5px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+/* .text-fes {
+    text-align: left !important;
+} */
+
+@media (max-width: 576px) {
+    .sortAsc {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .sortAsc {
+        /* padding: 10px 20px; */
+        /* font-size: 15px; */
+        margin-left: -105px;
+    }
+
+    .de {
+        margin-left: -180px;
+        margin-top: -35px;
+    }
+}
+
+/* Media query for screens smaller than 992px */
+@media (max-width: 992px) {
+    .sortAsc {
+        margin-top: -45px;
+    }
+}
+
+.clear-btn {
+    width: 79px;
+    height: 36px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #d9d1d1;
+    font-weight: 600;
+    font-size: 14px;
+    color: #212529;
+    cursor: pointer;
+}
+
+.fest-nam {
+    width: 400px !important;
+}
+
+
+.all-ads {
+    top: -38px;
+    right: 6px;
+}
+
+.right-m {
+    margin-top: -160px;
+}
+
+.left-m{
+    margin-bottom: 25px;
+}
+
+/* .past-date {
+  cursor: none;
+  pointer-events: none;
+} */
+
+.listen-issue .pin-event {
+    /* background: #222222; */
+    min-height: 328px;
+    padding-left: 15%;
+    margin-top: 62px;
+}
+
+.banner-right {
+    text-align: right;
+    margin-top: 78px;
+}
+
+.banner-left {
+    text-align: left;
+    margin-top: 18px;
+}

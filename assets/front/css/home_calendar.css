@@ -1,0 +1,685 @@
+   /* #day-carousel {
+      margin: 0 auto !important;
+      display: flex;
+      justify-content: space-evenly;
+      overflow-x: unset;
+   }
+
+   .calendar-box {
+      min-height: 299px;
+   }
+
+   .partner-button {
+      margin-top: 0;
+   }
+
+   .owl-height {
+      height: 50px !important;
+   }
+
+   .owl-stage {
+      transform: translate3d(-700px, 0px, 0px) !important;
+      transition: all 0.8s ease 0s !important;
+      width: 2100px !important;
+   }
+
+   .owl-stage-outer {
+      height: 50px !important;
+   } */
+
+
+
+   .selectdate>.day-box {
+      background-color: #d6171f !important;
+   }
+
+   .day-box {
+      transition: 600ms all;
+      cursor: pointer;
+   }
+   .all-ads {
+      margin-top: 306px;
+   }
+   #calendar-section::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      /*background: url("../front/img/loader.webp") no-repeat center #fff;*/
+      top: 0;
+      bottom: 0;
+      z-index: 5;
+      background-size: 100px;
+      transition: 600ms all;
+      transform: scale(1);
+   }
+
+   #calendar-section {
+      position: relative;
+   }
+
+   #calendar-section.expand::before {
+      transform: scale(0);
+   }
+
+   .selectdate * {
+      color: #fff !important;
+      border-color: #fff !important;
+   }
+
+   .owl-nav button {
+      outline: none !important;
+   }
+
+   /* .chooseDay .item {
+   display: table-cell; 
+   }*/
+   .sortAsc {
+      background-color: #fbe1e1;
+      color: #ba5d60;
+      font-family: 'open sans', 'arial';
+      font-size: 14px;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 5px 17px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-style: italic;
+   }
+
+   .new {
+      display: block;
+
+      float: right;
+      margin-right: -330px;
+      border: none;
+      margin-top: -16px;
+   }
+
+
+
+   .single-banner-caption.about-caption {
+      width: 500px;
+      left: 0%;
+      top: 30%;
+      text-align: center;
+   }
+
+   .ban-text {
+      left: 0% !important;
+   }
+
+
+   @media (max-width: 576px) {
+      .sortAsc {
+         padding: 8px 16px;
+         font-size: 14px;
+      }
+   }
+
+   /* Media query for screens smaller than 768px */
+   @media (max-width: 768px) {
+      .sortAsc {
+         /* padding: 10px 20px; */
+         /* font-size: 15px; */
+         margin-left: -105px;
+      }
+
+      .de {
+         margin-left: -180px;
+         margin-top: -35px;
+      }
+   }
+
+   /* Media query for screens smaller than 992px */
+   @media (max-width: 992px) {
+      .sortAsc {
+         margin-top: -45px;
+      }
+   }
+
+   @media (min-width: 320px) and (max-width: 420px) {
+      .tags {
+         width: 259px !important;
+      }
+
+      .venues {
+         width: 257px !important;
+      }
+
+      .locs {
+         width: 257px !important;
+      }
+
+      .jazzed {
+         width: 255px !important;
+      }
+
+      .form-control {
+         margin-bottom: 6px !important;
+      }
+
+      .sorting_butn {
+         margin-top: 0rem !important;
+      }
+
+      /* .calendar-box_mobile {
+         margin-top: 166px !important;
+
+      } */
+      .newStylezz-mobile {
+         margin-top: 2px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+
+      .event-t {
+         color: #fff;
+         position: relative !important;
+         /* top: -92px !important; */
+         left: -8px !important;
+         font-size: 22px !important;
+         width: 92% !important;
+      }
+
+      .event-h {
+         margin-top: -40px;
+      }
+
+
+      .searched-mob {
+         width: 257px !important;
+      }
+
+      /*.listen-iss {
+         margin-top: -58px !important;
+      }
+
+      .ra-pin {
+         min-height: 249px !important;
+         width: 221px !important;
+         padding-left: 5% !important;
+         left: 24px !important;
+         margin-left: 69px !important;
+      }
+
+      .ver-al {
+         font-size: 18px !important;
+         top: 21% !important;
+         left: 11% !important;
+      }
+
+      .listen-issue .wraped:after {
+         left: 23% !important;
+         top: -40px !important;
+         height: 208px !important;
+      }
+
+      .listen-issue .img2-wid {
+         width: 192px !important;
+         margin-top: -4px !important;
+         margin-left: 11px !important;
+         margin-bottom: -31px;
+      }*/
+
+      .item-ra {
+         align-items: center;
+         display: flex;
+         height: auto !important;
+         justify-content: center;
+         width: 100% !important;
+         /* margin-top: 32px !important; */
+      }
+
+
+      .form-control {
+         margin-bottom: 6px !important;
+      }
+
+      /* .al-marg{
+         margin-top: -136px !important;
+      } */
+
+
+      .tags {
+         width: 259px !important;
+      }
+
+      .venues {
+         width: 257px !important;
+      }
+
+      .locs {
+         width: 257px !important;
+      }
+
+      .jazzed {
+         width: 255px !important;
+      }
+
+      .newStylezzed {
+         margin-left: auto !important;
+         margin-right: auto !important;
+      }
+
+      .all-ads {
+         display: none !important;
+      }
+
+   }
+
+   /* .slider {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .caption_here {
+      position: absolute;
+      width: 80%;
+      bottom: 7%;
+      color: #fff;
+   }
+
+   #partner-carousel.owl-carousel .owl-item img {
+      display: block;
+      width: 55%;
+      margin: auto;
+      height: 251px;
+
+   } */
+
+   /* div#partner-carousel .item img.img-fluid {
+      width: 255px !important;
+      height: 184px;
+   } */
+
+   .al_width {
+      /* left: -37px !important; */
+      width: 100% !important;
+      top: 24% !important;
+   }
+
+   .event-a {
+      text-decoration: none !important;
+   }
+
+   h2.sponfeat-events {
+      text-align: left;
+      font-weight: 700;
+      margin-top: 10px;
+      font-size: 18px !important;
+   }
+
+   .more_info_artist_btn {
+      text-decoration: none;
+   }
+
+   .buy_reserve_both {
+      text-decoration: none;
+   }
+
+   /*   slider */
+
+   .contain-al {
+      margin: 0 auto;
+      max-width: 1400px;
+      width: 100%;
+   }
+
+
+   .slider-image-al {
+      width: 100% !important;
+      height: 200px !important;
+   }
+
+   /* .al-h {
+      width: 30% !important;
+      margin-left: auto;
+      margin-right: auto;
+   } */
+
+   .event-tags-de {
+      padding: 7px;
+      font-size: 12px;
+   }
+
+   .loca-map {
+      color: #6e6e6e;
+      text-decoration: none;
+   }
+
+   .loca-map:hover {
+      color: #6e6e6e !important;
+   }
+
+   .web-link {
+      margin-left: -16px !important;
+   }
+
+
+   .al-calendar-box h5 span {
+      font-size: 15px !important;
+      /* position: relative !important; */
+      color: #000;
+      right: -16px;
+      width: 58px;
+      top: 4px !important;
+      text-transform: uppercase;
+      left: 27px !important;
+   }
+
+   .event_texts {
+      position: relative;
+      top: 2px;
+      left: 39px;
+      display: flex;
+      gap: 66px;
+      align-items: center;
+
+   }
+
+   p.text-left {
+      margin-bottom: 6px !important;
+      color: #000 !important;
+      font-weight: 600 !important;
+   }
+
+   .al-imgs {
+      margin-top: 12px;
+      margin-left: -14px;
+      width: 118px;
+   }
+
+   .calendar-box .al-event-heading h6 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 15px !important;
+      color: #000;
+      margin-left: -6px !important;
+      line-height: 25px;
+      margin-top: 8px;
+      min-height: 90px;
+   }
+
+   .calendar-box .event-heading {
+      padding-left: 17px !important;
+      border-left: 1px solid #e0e0e0;
+      margin-left: 26px !important;
+   }
+
+   .calendar-box .al-date {
+      font-size: 21px !important;
+      color: #d6171f;
+      font-family: 'Oswald', sans-serif;
+   }
+
+
+   p.al-free {
+      color: red !important;
+      font-size: 18px !important;
+      font-weight: 600 !important;
+   }
+
+   .clear-btn {
+      width: 79px;
+      height: 36px;
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid #d9d1d1;
+      font-weight: 600;
+      font-size: 14px;
+      color: #212529;
+   }
+
+   
+   .item {
+      align-items: center;
+      display: flex;
+      height: auto !important;
+      justify-content: center;
+      width: 100% !important;
+   }
+
+   .banner-left {
+      text-align: left;
+      margin-top: 30px;
+   }
+
+   .banner-right {
+      text-align: right;
+      margin-top: 30px;
+   }
+
+
+   .al-pin-event {
+      min-height: 278px !important;
+      width: 100%;
+      padding-left: 0% !important;
+   }
+
+   .al-image-fluid {
+      width: 161px;
+      margin-top: 17px;
+   }
+
+   .al_listen-issue {
+      font-size: 21px !important;
+      top: 7% !important;
+      left: -4% !important;
+   }
+
+   .listen-issue .img1 {
+      width: 180px !important;
+      margin-top: 0px !important;
+      margin-left: 42px !important;
+   }
+
+   .listen-issue .wrapv:after {
+      left: 16% !important;
+      top: 66px !important;
+      height: 244px !important;
+   }
+
+   .listen-iss .al_issue .wraped:after {
+      left: 25% !important;
+      top: 13px !important;
+      height: 207px !important;
+   }
+
+   .img-al {
+      height: 250px !important;
+      object-fit: cover;
+      width: 100%;
+   }
+
+   /* .listen-issue-text {
+      margin-top: -41px !important;
+   } */
+
+   .jazz-txt {
+      color: #000 !important;
+   }
+
+   .event-h {
+      margin-top: 35px;
+   }
+
+
+   .venues {
+      font-size: 13px;
+   }
+
+   .tags {
+      font-size: 13px;
+   }
+
+   .jazzed {
+      font-size: 13px;
+   }
+
+   .locs {
+      font-size: 13px;
+   }
+
+   ::placeholder {
+      font-size: 15px;
+   }
+
+   .artist-event {
+      width: 440px !important;
+      border-radius: 50px;
+   }
+
+   .clear-btn {
+      width: 80px !important;
+      height: 36px;
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid #d9d1d1;
+      font-weight: 600;
+      font-size: 15px;
+      color: #212529;
+   }
+
+   .events-btn {
+      border: 1px solid red;
+      padding: 5px !important;
+      color: #000000;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 20px !important;
+   }
+
+   .ads-images {
+      width: 100% !important;
+      height: auto !important;
+   }
+
+
+   @media (max-width: 480px) {
+      .event-title-mob {
+         position: relative !important;
+         top: -9px;
+         left: -37px;
+      }
+
+      .event-h {
+         margin-top: -38px;
+      }
+
+      .al-pin-event {
+         min-height: 229px !important;
+         width: 202px !important;
+         padding-left: 2% !important;
+      }
+
+      .al_listen-issue {
+         font-size: 17px !important;
+         top: 40% !important;
+         left: 16% !important;
+      }
+
+      .listen-issue .wrapv:after {
+         left: 23% !important;
+         top: 19px !important;
+         height: 185px !important;
+      }
+
+      .listen-issue .img1 {
+         width: 175px !important;
+         margin-top: 0px !important;
+         margin-left: 21px !important;
+      }
+
+      /* .listen-issue-text {
+         margin-top: -12px !important;
+         margin-left: 84px;
+      } */
+
+      .item-ra {
+         height: auto !important;
+      }
+
+
+      .tags {
+         width: 259px !important;
+      }
+
+      .venues {
+         width: 257px !important;
+      }
+
+      .locs {
+         width: 257px !important;
+      }
+
+      .jazzed {
+         width: 255px !important;
+      }
+
+      .form-control {
+         margin-bottom: 6px !important;
+      }
+
+      .searched-mob {
+         width: 240px !important;
+      }
+
+      .newStylezz-mobile {
+         /* margin-top: 152px; */
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      .event_texts_mob {
+         position: relative;
+         top: 10px !important;
+         left: 80px !important;
+         display: flex;
+         gap: 89px !important;
+         align-items: center;
+      }
+
+      .calendar-box .event-heading h6 {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: 600;
+         font-size: 17px;
+         color: #000;
+         line-height: 25px;
+         margin-top: -4px !important;
+         min-height: 90px;
+      }
+
+      .calendar-box .event-heading {
+         padding-left: 20px;
+         border-left: 1px solid #e0e0e0;
+         padding-top: -35px;
+         /* position: relative; */
+         position: absolute;
+         top: -79px !important;
+         left: 133px !important;
+      }
+
+      .all-ads {
+         display: none !important;
+      }
+
+   }
+
+   .img-logo{
+      width: 201px !important;
+      height: 137px;
+   }
+
+   .logo-location{
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      margin-top: 20px;
+   }
