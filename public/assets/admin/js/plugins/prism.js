@@ -584,12 +584,21 @@ var Prism = (function (_self) {
 				code: code
 			};
 
+			function prismEscapeHTML(str) {
+				return String(str)
+					.replace(/&/g, '&amp;')
+					.replace(/</g, '&lt;')
+					.replace(/>/g, '&gt;')
+					.replace(/"/g, '&quot;')
+					.replace(/'/g, '&#039;');
+			}
+
 			function insertHighlightedCode(highlightedCode) {
 				env.highlightedCode = highlightedCode;
 
 				_.hooks.run('before-insert', env);
 
-				env.element.innerHTML = env.highlightedCode;
+				env.element.innerHTML = prismEscapeHTML(env.highlightedCode);
 
 				_.hooks.run('after-highlight', env);
 				_.hooks.run('complete', env);

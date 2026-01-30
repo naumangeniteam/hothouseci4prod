@@ -7,10 +7,18 @@
 	<!--<![endif]-->
 */
 
-(function() {
+(function () {
 	function addIcon(el, entity) {
-		var html = el.innerHTML;
-		el.innerHTML = '<span style="font-family: \'themify\'">' + entity + '</span>' + html;
+		var span = document.createElement('span');
+		span.style.fontFamily = 'themify';
+		span.textContent = entity;
+
+		el.innerHTML = '';
+		el.appendChild(span);
+
+		if (html) {
+			el.appendChild(document.createTextNode(html));
+		}
 	}
 	var icons = {
 		'ti-wand': '&#xe600;',
@@ -366,12 +374,12 @@
 		'ti-rss': '&#xe75e;',
 		'ti-rss-alt': '&#xe75f;',
 		'0': 0
-		},
+	},
 		els = document.getElementsByTagName('*'),
 		i, c, el;
 	for (i = 0; ; i += 1) {
 		el = els[i];
-		if(!el) {
+		if (!el) {
 			break;
 		}
 		c = el.className;
